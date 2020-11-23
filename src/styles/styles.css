@@ -1,0 +1,128 @@
+/* disable css validation for workspace */
+
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+@import url("https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Work+Sans:wght@400;500&display=swap");
+
+:root {
+  --font-family-primary: "Work Sans", sans-serif;
+  --font-family-secondary: "Termina", sans-serif;
+  --font-family-tertiary: "Cousine", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 0 !important;
+  font-family: var(--font-family-primary);
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+body *:focus {
+  outline-color: #fafafa;
+}
+
+body a {
+  transition: 0.2s color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  line-height: 107.6%;
+  letter-spacing: -0.03em;
+}
+
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+select,
+textarea {
+  font-size: 1.6rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* font family */
+
+.font-worksans {
+  font-family: var(--font-family-primary);
+}
+
+.font-cousine {
+  font-family: var(--font-family-tertiary);
+}
+
+/* font weight */
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* Text align */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+
+/* CUSTOM COMPONENTS  */
+
+.max-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* purgecss end ignore */
+
+@tailwind utilities;
