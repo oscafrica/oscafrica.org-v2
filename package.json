@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "autoprefixer": "^10.0.2",
@@ -16,9 +18,15 @@
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.2",
+    "@storybook/addon-essentials": "^6.1.2",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.1.2",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "storybook-css-modules-preset": "^1.0.4",
     "typescript": "4.0"
   },
   "license": "MIT"
