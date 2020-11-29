@@ -82,40 +82,6 @@ textarea {
   font-family: var(--font-family-tertiary);
 }
 
-/* font weight */
-
-.normal {
-  font-weight: 400;
-}
-
-.medium {
-  font-weight: 500;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-/* Text align */
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-::-webkit-scrollbar {
-  width: 0.6rem;
-  height: 0.4rem;
-  border-radius: 50%;
-}
-
 /* CUSTOM COMPONENTS  */
 
 .max-1440 {
