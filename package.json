@@ -13,6 +13,7 @@
     "autoprefixer": "^10.0.2",
     "cssnano": "^4.1.10",
     "next": "latest",
+    "nprogress": "^0.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "tailwindcss": "^1.9.6"
