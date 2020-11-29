@@ -1,8 +1,12 @@
 import Link from "next/link";
+import Button from "../components/atoms/Button/Button";
 
 const IndexPage = () => (
   <div>
-    <h1>Hello Next.js 👋</h1>
+    <h1 className="bg-red-400">Hello Next.js 👋</h1>
+    <Button name="hello" type="button">
+      Hello
+    </Button>
     <p>
       <Link href="/about">
         <a>About</a>
