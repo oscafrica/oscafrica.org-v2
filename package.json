@@ -10,8 +10,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@types/nprogress": "^0.2.0",
     "autoprefixer": "^10.0.2",
+    "classnames": "^2.2.6",
     "cssnano": "^4.1.10",
     "next": "latest",
     "nprogress": "^0.2.0",
@@ -25,7 +25,9 @@
     "@storybook/addon-links": "^6.1.2",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.1.2",
+    "@types/classnames": "^2.2.11",
     "@types/node": "^12.12.21",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "storybook-css-modules-preset": "^1.0.4",
