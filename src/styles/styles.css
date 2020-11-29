@@ -1,10 +1,5 @@
 /* disable css validation for workspace */
 
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-@import url("https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Work+Sans:wght@400;500&display=swap");
-
 :root {
   --font-family-primary: "Work Sans", sans-serif;
   --font-family-secondary: "Termina", sans-serif;
@@ -88,7 +83,3 @@ textarea {
   max-width: 1440px;
   margin: 0 auto;
 }
-
-/* purgecss end ignore */
-
-@tailwind utilities;

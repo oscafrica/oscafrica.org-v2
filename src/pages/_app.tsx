@@ -3,7 +3,8 @@
 import App from "next/app";
 import nprogress from "nprogress";
 import Router from "next/router";
-import "../styles/tailwind.output.css";
+import "../styles/styles.css";
+import "tailwindcss/tailwind.css";
 
 Router.events.on("routeChangeStart", () => {
   nprogress.start();

@@ -2,9 +2,7 @@
   "name": "osca-website",
   "version": "1.0.0",
   "scripts": {
-    "build:tailwind": "tailwindcss build src/styles/styles.css -o src/styles/tailwind.output.css",
-    "prebuild": "npm run build:tailwind",
-    "dev": "npm run build:tailwind && next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",

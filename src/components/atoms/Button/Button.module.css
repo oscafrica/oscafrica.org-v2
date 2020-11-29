@@ -1,5 +1,5 @@
 .btn {
-  @apply py-6 px-12 bg-white;
+  @apply py-6 px-12 bg-red-100;
 }
 
 .btn:hover {
