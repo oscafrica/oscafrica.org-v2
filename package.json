@@ -2,24 +2,25 @@
   "name": "osca-website",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "build:tailwind": "tailwindcss build src/styles/storybook.css -o src/styles/tailwind.output.css",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "storybook": "start-storybook -s ./public -p 6006",
+    "storybook": "npm run build:tailwind && start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
-    "autoprefixer": "^10.0.4",
+    "autoprefixer": "^9",
     "classnames": "^2.2.6",
     "cssnano": "^4.1.10",
     "next": "latest",
     "nprogress": "^0.2.0",
-    "postcss": "^8.1.10",
+    "postcss": "^7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.1.9",
