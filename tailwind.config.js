@@ -62,7 +62,6 @@ module.exports = {
       },
       fontSize: {
         base: "1.4rem",
-        "2xl": "1.6rem",
         h1: "6.8rem",
         h2: "4.5rem",
         h3: "4.1rem",
@@ -72,7 +71,6 @@ module.exports = {
         "paragraph-1": "2rem",
         "paragraph-2": "1.8rem",
         body: "1.6rem",
-        "small-text": "1.4rem",
         captions: "1.2rem"
       }
     }
