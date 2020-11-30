@@ -1,6 +1,5 @@
 import React from "react";
-import classnames from "classnames";
-import styles from "./Button.module.css";
+import classNames from "classnames";
 
 interface ButtonProps {
   type: "submit" | "reset" | "button";
@@ -10,14 +9,23 @@ interface ButtonProps {
   className?: string;
   disabled?: boolean;
 }
-console.log(styles);
+
+const buttonSize = {
+  default: "py-6 px-10",
+  small: "py-4 px-7"
+};
+
 const Button: React.FC<ButtonProps> = ({ size = "default", className, children, type, onClick, disabled }) => {
   return (
     <button
       onClick={onClick}
       type={type}
       disabled={disabled}
-      className={classnames(styles["btn"], styles[`btn--${size}`], className)}
+      className={classNames(
+        "flex items-center bg-white font-medium hover:bg-primary rounded-primary duration-200 transition-all",
+        buttonSize[size],
+        className
+      )}
     >
       {children}
     </button>
