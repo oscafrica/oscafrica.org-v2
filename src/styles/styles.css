@@ -33,7 +33,7 @@ body *:focus {
   outline-color: #fafafa;
 }
 
-body a {
+body a, body button {
   transition: 0.2s color;
 }
 

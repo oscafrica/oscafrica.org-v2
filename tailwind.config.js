@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#F9AA4F",
-        secondary: '#0A2237',
+        secondary: "#0A2237",
         white: "#FFFFFF",
         orange: {
           100: "#FCF6ED",
@@ -75,6 +75,9 @@ module.exports = {
         "paragraph-2": "1.8rem",
         body: "1.6rem",
         captions: "1.2rem"
+      },
+      borderRadius: {
+        primary: "10px"
       }
     }
   },
