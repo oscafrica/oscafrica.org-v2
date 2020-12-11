@@ -7,11 +7,8 @@ export default {
   component: NavBar
 } as Meta;
 
-const Template: Story<NavbarProps> = (args) => <NavBar {...args}>Who we are</NavBar>;
+const Template: Story<NavbarProps> = (args) => <NavBar {...args} />;
 
 export const Default = Template.bind({});
 
-Default.args = {
-  tune: "dark",
-  type: "svg"
-};
+Default.args = {};
