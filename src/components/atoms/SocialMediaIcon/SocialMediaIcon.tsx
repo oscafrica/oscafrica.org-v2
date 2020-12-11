@@ -1,7 +1,8 @@
 import React from "react";
+import { SocialLink } from "../../../types";
 
 interface SocialMediaIconProps {
-  social: "facebook" | "discord" | "twitter" | "github" | "instagram";
+  social: SocialLink;
 }
 
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ social }) => {
