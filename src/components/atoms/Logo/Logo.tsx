@@ -10,7 +10,7 @@ const Logo: React.FC<LogoProps> = ({ tune, type }) => {
   return (
     <Link href="/">
       <a>
-        <img src={`/images/logo/${tune}/osca.${type}`} />
+        <img alt="OSCA logo" src={`/images/logo/${tune}/osca.${type}`} />
       </a>
     </Link>
   );

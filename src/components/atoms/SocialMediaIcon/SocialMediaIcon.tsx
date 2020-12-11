@@ -8,7 +8,7 @@ interface SocialMediaIconProps {
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ social }) => {
   return (
     <a href="#" target="_blank" rel="noreferrer noopener">
-      <img src={`/images/icons/social/footer/${social}.svg`} />
+      <img alt={social} src={`/images/icons/social/footer/${social}.svg`} />
     </a>
   );
 };
