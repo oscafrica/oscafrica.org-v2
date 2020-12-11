@@ -7,7 +7,7 @@ export default {
   component: SocialMediaIcon
 } as Meta;
 
-const Template: Story<SocialMediaIconProps> = (args) => <SocialMediaIcon {...args}>Who we are</SocialMediaIcon>;
+const Template: Story<SocialMediaIconProps> = (args) => <SocialMediaIcon {...args} />;
 
 export const Default = Template.bind({});
 
