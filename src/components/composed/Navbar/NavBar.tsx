@@ -1,9 +1,10 @@
 import React from "react";
+import classNames from "classnames";
 import Link from "next/link";
 import Logo from "../../atoms/Logo/Logo";
 
 interface NavbarProps {
-  tune: "dark" | "light";
+  tune?: "dark" | "light";
 }
 
 interface INavLink {
@@ -26,17 +27,26 @@ const navLinks: INavLink[] = [
   }
 ];
 
-const NavBar: React.FC<NavbarProps> = () => {
+const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
+  const ifLightTune = tune === "light";
+
   return (
-    <header className="flex items-center px-32 py-8">
-      <Logo type="svg" tune="dark" />
+    <header className={classNames("flex items-center px-32 py-8", ifLightTune ? "bg-transparent" : "bg-white")}>
+      <Logo type="svg" tune={tune} />
 
       <nav>
         <ul className="flex items-center">
           {navLinks.map(({ title, href }) => (
             <li className="ml-12" key={title}>
               <Link href={href}>
-                <a className="text-captions font-medium tracking-widest text-black">{title}</a>
+                <a
+                  className={classNames(
+                    "text-captions font-medium tracking-widest",
+                    ifLightTune ? " text-white" : " text-black"
+                  )}
+                >
+                  {title}
+                </a>
               </Link>
             </li>
           ))}
