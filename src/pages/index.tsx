@@ -21,7 +21,7 @@ const IndexPage = () => {
 
       <main className="flex min-h-screen -mt-28 flex-grow">
         <SectionWithBackground background="bg-1" className="w-2/3">
-          <div className="min-h-full bg-secondary bg-opacity-50 w-full pl-32 flex flex-col justify-end items-start pb-72">
+          <div className="min-h-full bg-secondary hover:bg-opacity-80 bg-opacity-50 w-full pl-32 flex flex-col justify-end items-start pb-72">
             <h2 color="white" className="text-h3 font-bold tracking-widest text-white">
               The Next Billion Creators
             </h2>
@@ -39,7 +39,7 @@ const IndexPage = () => {
 
         <section className="w-1/3 flex flex-col">
           <SectionWithBackground background="bg-2" className="flex-grow">
-            <div className="flex flex-col bg-purple-600 bg-opacity-10 h-full justify-end px-16 pb-16">
+            <div className="flex flex-col bg-blue-500 bg-opacity-30 hover:bg-opacity-80 h-full justify-end px-16 pb-16">
               <SectionTitle color="white">Community</SectionTitle>
               <p className="text-white text-body mt-6 mb-20">
                 Our community is spread across Africa hosted in various locations called chapters.
@@ -49,7 +49,7 @@ const IndexPage = () => {
           </SectionWithBackground>
 
           <SectionWithBackground background="bg-2" className="flex-grow">
-            <div className="flex flex-col bg-primary bg-opacity-30 h-full justify-end px-16 pb-16">
+            <div className="flex flex-col bg-primary bg-opacity-30 hover:bg-opacity-60 h-full justify-end px-16 pb-16">
               <SectionTitle color="white">Team</SectionTitle>
               <p className="text-white text-body mt-6 mb-16">The brains behind the awesomeness.</p>
               <ArrowLink href="#">Check out our team profiles</ArrowLink>
