@@ -31,7 +31,9 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
   const ifLightTune = tune === "light";
 
   return (
-    <header className={classNames("flex z-50 items-center px-32 py-8", ifLightTune ? "bg-transparent" : "bg-white")}>
+    <header
+      className={classNames("flex z-50 items-center px-32 py-8", ifLightTune ? "bg-transparent" : "bg-neutral-100")}
+    >
       <Logo type="svg" tune={tune} />
 
       <nav>
