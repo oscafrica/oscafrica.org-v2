@@ -62,7 +62,7 @@ input[type="tel"],
 input[type="text"],
 select,
 textarea {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   appearance: none;
   -webkit-appearance: none;
 }
