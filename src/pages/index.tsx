@@ -8,13 +8,13 @@ interface SectionWithBackgroundProps {
   background: "bg-1" | "bg-2" | "bg-3";
 }
 
-const IndexPage = () => {
-  const SectionWithBackground = styled.article`
-    background: ${({ background }: SectionWithBackgroundProps) =>
-      `url("/images/backgrounds/home-page/${background}.png")`};
-    background-size: cover;
-  `;
+const SectionWithBackground = styled.article`
+  background: ${({ background }: SectionWithBackgroundProps) =>
+    `url("/images/backgrounds/home-page/${background}.png")`};
+  background-size: cover;
+`;
 
+const IndexPage = () => {
   return (
     <div className="bg-black min-h-screen flex flex-col">
       <NavBar tune="light" />

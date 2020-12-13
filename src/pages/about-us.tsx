@@ -4,14 +4,14 @@ import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/S
 import Layout from "../components/composed/Layout/Layout";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 
-const IndexPage = () => {
-  const PageHeader = styled.article`
-    min-height: 85vh;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.66) 21.24%, rgba(0, 0, 0, 0) 60.68%),
-      url("/images/backgrounds/about-us/bg-1.png");
-    background-size: cover;
-  `;
+const PageHeader = styled.article`
+  min-height: 85vh;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.66) 21.24%, rgba(0, 0, 0, 0) 60.68%),
+    url("/images/backgrounds/about-us/bg-1.png");
+  background-size: cover;
+`;
 
+const AboutUsPage = () => {
   return (
     <Layout>
       <PageHeader className="flex flex-col justify-end px-32 pb-80">
@@ -99,11 +99,11 @@ const IndexPage = () => {
             Port-Harcourt, OSCA Imo and OSCA Lokoja. Each of this chapters have successfully hosted a physical meetup.
           </p>
 
-          <ArrowLink href="#">Check out our community</ArrowLink>
+          <ArrowLink href="/community">Check out our community</ArrowLink>
         </div>
       </article>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default AboutUsPage;
