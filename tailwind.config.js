@@ -4,8 +4,8 @@ module.exports = {
   purge: ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx", "public/**/*.html"],
   theme: {
     fontFamily: {
-      primary: ["Work Sans", "sans-serif"],
-      secondary: ["Cousine", "sans-serif"]
+      lato: ["Lato", "sans-serif"],
+      ubuntu: ["Ubuntu", "sans-serif"]
     },
     extend: {
       colors: {

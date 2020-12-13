@@ -1,9 +1,9 @@
 /* disable css validation for workspace */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Lato:wght@400;500&display=swap");
 
 :root {
-  --font-family-primary: "Work Sans", sans-serif;
-  --font-family-secondary: "Termina", sans-serif;
-  --font-family-tertiary: "Cousine", sans-serif;
+  --font-family-primary: "Lato", sans-serif;
+  --font-family-secondary: "Ubuntu", sans-serif;
 }
 
 html {
@@ -11,19 +11,17 @@ html {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   top: 0 !important;
-  font-family: var(--font-family-primary);
+
   margin: 0px;
   padding: 0px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0;
 }
 
 body * {
   box-sizing: border-box;
+  font-family: var(--font-family-primary);
+  color: #0a2237;
   margin: 0px;
   padding: 0px;
   font-size: 16px;
@@ -33,7 +31,8 @@ body *:focus {
   outline-color: #fafafa;
 }
 
-body a, body button {
+body a,
+body button {
   transition: 0.2s color;
 }
 
@@ -65,16 +64,6 @@ textarea {
   font-size: 1.4rem;
   appearance: none;
   -webkit-appearance: none;
-}
-
-/* font family */
-
-.font-worksans {
-  font-family: var(--font-family-primary);
-}
-
-.font-cousine {
-  font-family: var(--font-family-tertiary);
 }
 
 /* CUSTOM COMPONENTS  */
