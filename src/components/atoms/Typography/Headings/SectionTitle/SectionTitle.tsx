@@ -14,7 +14,9 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ children, className, color 
     font-size: ${fontSize}px;
   `;
 
-  return <H2 className={classNames("font-bold tracking-widest", `text-${color}`, className)}>{children}</H2>;
+  return (
+    <H2 className={classNames("font-bold tracking-widest font-ubuntu", `text-${color}`, className)}>{children}</H2>
+  );
 };
 
 export type { SectionTitleProps };
