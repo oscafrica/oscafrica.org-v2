@@ -3,11 +3,13 @@ import { SocialLink } from "../../../types";
 
 interface SocialMediaIconProps {
   social: SocialLink;
+  className?: string;
+  href: string;
 }
 
-const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ social }) => {
+const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ social, href, className }) => {
   return (
-    <a href="#" target="_blank" rel="noreferrer noopener">
+    <a href={href} className={className} target="_blank" rel="noreferrer noopener">
       <img alt={social} src={`/images/icons/social/footer/${social}.svg`} />
     </a>
   );

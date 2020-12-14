@@ -85,14 +85,11 @@ const Footer = () => {
         <ul className="flex items-center">
           {socialLinks.map(({ title, href }) => (
             <li className="ml-12" key={title}>
-              <a
+              <SocialMediaIcon
                 href={href}
-                target="_blank"
-                rel="noreferrer noopener"
                 className="text-captions font-medium tracking-widest text-white"
-              >
-                <SocialMediaIcon social={title} />
-              </a>
+                social={title}
+              />
             </li>
           ))}
         </ul>
