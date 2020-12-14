@@ -1,5 +1,5 @@
 /* disable css validation for workspace */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Lato:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
 
 :root {
   --font-family-primary: "Lato", sans-serif;
@@ -71,4 +71,22 @@ textarea {
 .max-1440 {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
 }
