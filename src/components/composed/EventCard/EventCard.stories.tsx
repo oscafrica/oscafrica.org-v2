@@ -13,7 +13,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   image: "/images/backgrounds/community/bg-2.png",
-  title: "OSCA-LAGOS",
-  description: "Open Source something something again for the year 2021",
-  eventLink: "https://opencollective.com/osca/events.json?limit=10&offset=0"
+  region: "OSCA-LAGOS",
+  name: "Open Source something something again for the year 2021",
+  url: "https://opencollective.com/osca/events.json?limit=10&offset=0"
 };

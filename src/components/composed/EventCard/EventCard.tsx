@@ -1,12 +1,14 @@
 import React from "react";
+import classNames from "classnames";
 import styled from "styled-components";
 import ArrowLink from "../../atoms/ArrowLink/ArrowLink";
 
 export interface EventCardProps {
   image: string;
-  title: string;
-  description: string;
-  eventLink: string;
+  name: string;
+  region: string;
+  url: string;
+  className?: string;
 }
 
 const EventCardWrapper = styled.article`
@@ -20,23 +22,23 @@ const EventCardWrapper = styled.article`
     height: var(--card-width);
   }
 
-  .event-description {
+  .event-region {
     margin-top: -25%;
   }
 `;
 
-const EventCard = ({ image, title, description, eventLink }: EventCardProps) => {
+const EventCard = ({ image, name, region, url, className }: EventCardProps) => {
   return (
-    <EventCardWrapper className="flex flex-col justify-center">
+    <EventCardWrapper className={classNames("flex flex-col justify-center", className)}>
       <div>
         <figure>
-          <img className="event-image" src={image} alt={title} />
+          <img className="event-image" src={image} alt={name} />
         </figure>
-        <div className="px-10 relative event-description">
+        <div className="px-10 relative event-region">
           <div className="px-12 pb-12 pt-16 bg-white rounded-lg ">
-            <h4 className="uppercase font-ubuntu">{title}</h4>
-            <p className="mb-12 mt-9 font-bold">{description}</p>
-            <ArrowLink href={eventLink} colored>
+            <p className="font-ubuntu text-captions">{region}</p>
+            <p className="mb-12 mt-9 font-bold font-lato">{name}</p>
+            <ArrowLink href={url} colored>
               Know More
             </ArrowLink>
           </div>
