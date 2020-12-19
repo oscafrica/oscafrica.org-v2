@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import EventCard from "../components/composed/EventCard/EventCard";
 import Layout from "../components/composed/Layout/Layout";
+import MapWithToolTip from "../components/composed/MapWithToolTip/MapWithToolTip";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 
 interface IEvent {
@@ -87,6 +88,7 @@ const CommunityPage = () => {
       <article className="mt-28">
         <SectionTitle fontSize="32">Our Chapters</SectionTitle>
         <h3 className="mt-16">Click on the location pointer for more details.</h3>
+        <MapWithToolTip />
       </article>
       <article className="mt-28 pb-40">
         <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
