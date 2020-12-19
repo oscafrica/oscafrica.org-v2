@@ -46,7 +46,7 @@ const IndexPage = () => {
               <p className="text-white font-medium text-body mt-6 mb-20">
                 Our community is spread across Africa hosted in various locations called chapters.
               </p>
-              <ArrowLink href="#">Check out our community</ArrowLink>
+              <ArrowLink href="/community">Check out our community</ArrowLink>
             </div>
           </SectionWithBackground>
 

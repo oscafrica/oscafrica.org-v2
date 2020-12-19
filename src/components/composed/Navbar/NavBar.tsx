@@ -19,7 +19,7 @@ const navLinks: INavLink[] = [
   },
   {
     title: "COMMUNITY",
-    href: "#"
+    href: "/community"
   },
   {
     title: "BLOG",
