@@ -20,10 +20,10 @@ const CardImage = styled.figure`
 
 const MemberCard = ({ image, name, twitter, className }: MemberCardProps) => {
   return (
-    <article className={classNames("flex flex-col justify-center relative p-5", className)}>
-      <div className="w-full">
+    <article className={classNames("flex flex-col justify-center p-5", className)}>
+      <div className="w-full relative">
         <CardImage>
-          <img className="object-fit w-full" src={image} alt={name} />
+          <img className="object-cover w-full" src={image} alt={name} />
         </CardImage>
         <div className="flex items-center bg-white absolute bottom-0 left-0 pl-16 pr-20 py-12">
           <p className="font-bold text text-4xl font-ubuntu mr-9">{name}</p>
