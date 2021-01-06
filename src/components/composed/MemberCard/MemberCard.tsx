@@ -2,11 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import styled from "styled-components";
 import Icon from "../../atoms/Icon/Icon";
+import { IMember } from "../../../interfaces/IMember.interface";
 
-export interface MemberCardProps {
-  image: string;
-  name: string;
-  twitter: string;
+export interface MemberCardProps extends IMember {
   className?: string;
 }
 
@@ -22,7 +20,7 @@ const CardImage = styled.figure`
 
 const MemberCard = ({ image, name, twitter, className }: MemberCardProps) => {
   return (
-    <article className={classNames("flex flex-col justify-center relative", className)}>
+    <article className={classNames("flex flex-col justify-center relative p-5", className)}>
       <div className="w-full">
         <CardImage>
           <img className="object-fit w-full" src={image} alt={name} />
