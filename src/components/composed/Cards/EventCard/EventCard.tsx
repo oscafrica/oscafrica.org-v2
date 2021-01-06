@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import styled from "styled-components";
-import ArrowLink from "../../atoms/ArrowLink/ArrowLink";
+import ArrowLink from "../../../atoms/ArrowLink/ArrowLink";
 
 export interface EventCardProps {
   image: string;

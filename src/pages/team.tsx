@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import Layout from "../components/composed/Layout/Layout";
-import MemberCard from "../components/composed/MemberCard/MemberCard";
+import MemberCard from "../components/composed/Cards/MemberCard/MemberCard";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import { IMember } from "../interfaces/IMember.interface";
 
@@ -16,7 +16,7 @@ const CORE_MEMBERS: IMember[] = [
   {
     twitter: "https://twitter.com/Samson_Goddy",
     name: "Samson Goddy",
-    image: "/images/team/samson.png"
+    image: "/images/team/core/samson.png"
   },
   {
     twitter: "https://twitter.com/Kolokodess",

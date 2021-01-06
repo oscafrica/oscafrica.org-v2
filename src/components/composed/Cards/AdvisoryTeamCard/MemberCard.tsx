@@ -1,8 +1,8 @@
 import React from "react";
 import classNames from "classnames";
 import styled from "styled-components";
-import Icon from "../../atoms/Icon/Icon";
-import { IMember } from "../../../interfaces/IMember.interface";
+import Icon from "../../../atoms/Icon/Icon";
+import { IMember } from "../../../../interfaces/IMember.interface";
 
 export interface MemberCardProps extends IMember {
   className?: string;
