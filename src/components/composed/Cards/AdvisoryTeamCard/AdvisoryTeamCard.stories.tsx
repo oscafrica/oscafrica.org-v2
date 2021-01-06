@@ -1,13 +1,13 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import MemberCard, { MemberCardProps } from "./MemberCard";
+import AdvisoryTeamCard, { AdvisoryTeamCardProps } from "./AdvisoryTeamCard";
 
 export default {
-  title: "Composed/MemberCard",
-  component: MemberCard
+  title: "Composed/AdvisoryTeamCard",
+  component: AdvisoryTeamCard
 } as Meta;
 
-const Template: Story<MemberCardProps> = (args) => <MemberCard {...args} />;
+const Template: Story<AdvisoryTeamCardProps> = (args) => <AdvisoryTeamCard {...args} />;
 
 export const Default = Template.bind({});
 

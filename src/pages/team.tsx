@@ -4,6 +4,7 @@ import Layout from "../components/composed/Layout/Layout";
 import MemberCard from "../components/composed/Cards/MemberCard/MemberCard";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import { IMember } from "../interfaces/IMember.interface";
+import AdvisoryTeamCard from "../components/composed/Cards/AdvisoryTeamCard/AdvisoryTeamCard";
 
 const PageHeader = styled.article`
   min-height: 85vh;
@@ -82,20 +83,8 @@ const CommunityPage = () => {
         </div>
         <section className="mt-20 flex flex-wrap  -mx-5 -my-5">
           {CORE_MEMBERS.map((member) => (
-            <MemberCard {...member} key={member.name} className="w-1/3" />
+            <AdvisoryTeamCard {...member} key={member.name} className="w-1/3" />
           ))}
-          <SeeAllMembersCardContainer className="w-1/3 p-5">
-            <div className="h-full w-full flex items-center justify-center bg-white">
-              <a
-                href="https://docs.oscafrica.org/about/team"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-primary text-4xl hover:underline font-ubuntu font-normal"
-              >
-                See all team members
-              </a>
-            </div>
-          </SeeAllMembersCardContainer>
         </section>
       </div>
     </Layout>
