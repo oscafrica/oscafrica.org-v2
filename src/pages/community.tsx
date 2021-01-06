@@ -86,13 +86,17 @@ const CommunityPage = () => {
         </div>
       </article>
       <article className="mt-28">
-        <SectionTitle fontSize="32">Our Chapters</SectionTitle>
-        <h3 className="mt-16">Click on the location pointer for more details.</h3>
+        <div className="pl-24">
+          <SectionTitle fontSize="32">Our Chapters</SectionTitle>
+          <h3 className="mt-16">Click on the location pointer for more details.</h3>
+        </div>
         <MapWithToolTip />
       </article>
       <article className="mt-28 pb-40">
-        <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
-        <h3 className="mt-16 mb-44">We’re always excited to meet up and have the most effective conversations</h3>
+        <div className="pl-24">
+          <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
+          <h3 className="mt-16 mb-44">We’re always excited to meet up and have the most effective conversations</h3>
+        </div>
         <section className="flex overflow-x-scroll max-w-full">
           {testEvents.map((event) => (
             <EventCard {...event} className="mr-10" />
