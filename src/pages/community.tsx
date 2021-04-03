@@ -2,8 +2,9 @@ import Link from "next/link";
 import { useEffect } from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
-import EventCard from "../components/composed/EventCard/EventCard";
+import EventCard from "../components/composed/Cards/EventCard/EventCard";
 import Layout from "../components/composed/Layout/Layout";
+import MapWithToolTip from "../components/composed/MapWithToolTip/MapWithToolTip";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 
 interface IEvent {
@@ -108,8 +109,10 @@ const CommunityPage = () => {
         </div>
       </article>
       <article className="mt-28 pb-40">
-        <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
-        <h3 className="mt-16 mb-44">We’re always excited to meet up and have the most effective conversations</h3>
+        <div className="pl-24">
+          <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
+          <h3 className="mt-16 mb-44">We’re always excited to meet up and have the most effective conversations</h3>
+        </div>
         <section className="flex overflow-x-scroll max-w-full">
           {testEvents.map((event) => (
             <EventCard {...event} className="mr-10" />
