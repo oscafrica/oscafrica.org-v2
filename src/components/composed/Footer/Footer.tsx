@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Logo from "../../atoms/Logo/Logo";
 import { SocialLink } from "../../../types";
 import SocialMediaIcon from "../../atoms/SocialMediaIcon/SocialMediaIcon";
@@ -33,7 +32,7 @@ const footerLinks: IFooterLink[] = [
   },
   {
     title: "CONTACT US",
-    href: "https://twitter.com/oscafrica"
+    href: "mailto:info@oscafrica.org"
   }
 ];
 
@@ -70,9 +69,14 @@ const Footer = () => {
           <ul className="flex items-center">
             {footerLinks.map(({ title, href }) => (
               <li className="ml-12" key={title}>
-                <Link href={href}>
-                  <a className="text-captions font-medium tracking-widest text-white">{title}</a>
-                </Link>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer noopenner"
+                  className="text-captions font-medium tracking-widest text-white"
+                >
+                  {title}
+                </a>
               </li>
             ))}
           </ul>
