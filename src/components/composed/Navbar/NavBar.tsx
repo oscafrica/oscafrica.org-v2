@@ -20,10 +20,6 @@ const navLinks: INavLink[] = [
   {
     title: "COMMUNITY",
     href: "/community"
-  },
-  {
-    title: "BLOG",
-    href: "#"
   }
 ];
 
@@ -52,6 +48,19 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
               </Link>
             </li>
           ))}
+          <li className="ml-12">
+            <a
+              href="https://blog.oscafrica.org/"
+              target="_blank"
+              rel="noreferrer noopenner"
+              className={classNames(
+                "text-captions font-medium tracking-widest uppercase",
+                ifLightTune ? " text-white" : " text-black"
+              )}
+            >
+              Blog
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
