@@ -107,7 +107,7 @@ const CommunityPage = () => {
           </div>
         </div>
       </article>
-      <article className="mt-28 pb-40">
+      <article className="mt-28 pt-40 pb-40">
         <div className="pl-24">
           <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
           <h3 className="mt-16 mb-44">We’re always excited to meet up and have the most effective conversations</h3>
