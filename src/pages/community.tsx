@@ -118,6 +118,21 @@ const CommunityPage = () => {
           ))}
         </section>
       </article>
+
+      <article className="py-28 bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
+        <p className="font-lato text-gray-700 text-body text-center w-1/3 leading-10 mb-12">
+          As a community, we intend to help integrate the art of open source contribution into African developer
+          ecosystem whilst strongly advocating for the adoption of free and open source technologies.
+        </p>
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://discord.gg/8STPZzN"
+          className=" text-primary text-body py-4 px-7 rounded-lg hover:text-black hover:bg-primary leading-10"
+        >
+          Join our community
+        </a>
+      </article>
     </Layout>
   );
 };
