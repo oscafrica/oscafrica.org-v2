@@ -4,14 +4,8 @@ import Layout from "../components/composed/Layout/Layout";
 import MemberCard from "../components/composed/Cards/MemberCard/MemberCard";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import { IMember } from "../interfaces/IMember.interface";
+import { IAdvisoryMember } from "../interfaces/IAdvisoryMember.interface";
 import AdvisoryTeamCard from "../components/composed/Cards/AdvisoryTeamCard/AdvisoryTeamCard";
-
-const PageHeader = styled.article`
-  min-height: 85vh;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.66) 21.24%, rgba(0, 0, 0, 0) 60.68%),
-    url("/images/backgrounds/community/bg-1.png");
-  background-size: cover;
-`;
 
 const CORE_MEMBERS: IMember[] = [
   {
@@ -38,6 +32,34 @@ const CORE_MEMBERS: IMember[] = [
     twitter: "https://twitter.com/yomdroid",
     name: "Yoma Okobiah",
     image: "/images/team/core/yoma.png"
+  }
+];
+
+const ADVISORY_MEMBERS: IAdvisoryMember[] = [
+  {
+    name: "Albert Wilson",
+    role: "Microsoft Open Source Organizer",
+    image: "/images/team/advisory/albert.png"
+  },
+  {
+    name: "Rosemary Cooper",
+    role: "Microsoft Open Source Organizer",
+    image: "/images/team/advisory/rosemary.png"
+  },
+  {
+    name: "Gloria Richards",
+    role: "Microsoft Open Source Organizer",
+    image: "/images/team/advisory/gloria.png"
+  },
+  {
+    name: "Cameron Webb",
+    role: "Microsoft Open Source Organizer",
+    image: "/images/team/advisory/gloria.png"
+  },
+  {
+    name: "Kathryn Fisher",
+    role: "Microsoft Open Source Organizer",
+    image: "/images/team/advisory/fisher.png"
   }
 ];
 
@@ -82,13 +104,20 @@ const CommunityPage = () => {
           <SectionTitle fontSize="32">Advisory board</SectionTitle>
         </div>
         <section className="mt-20 flex flex-wrap  -mx-5 -my-5">
-          {CORE_MEMBERS.map((member) => (
-            <AdvisoryTeamCard {...member} key={member.name} className="w-1/3" />
+          {ADVISORY_MEMBERS.map((member) => (
+            <AdvisoryTeamCard {...member} key={member.name} className="w-1/4" />
           ))}
         </section>
       </div>
     </Layout>
   );
 };
+
+const PageHeader = styled.article`
+  min-height: 85vh;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.66) 21.24%, rgba(0, 0, 0, 0) 60.68%),
+    url("/images/backgrounds/community/bg-1.png");
+  background-size: cover;
+`;
 
 export default CommunityPage;
