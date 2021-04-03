@@ -15,11 +15,11 @@ interface INavLink {
 const navLinks: INavLink[] = [
   {
     title: "TEAM",
-    href: "#"
+    href: "/team"
   },
   {
     title: "COMMUNITY",
-    href: "#"
+    href: "/community"
   },
   {
     title: "BLOG",
