@@ -4,7 +4,6 @@ import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import EventCard from "../components/composed/Cards/EventCard/EventCard";
 import Layout from "../components/composed/Layout/Layout";
-import MapWithToolTip from "../components/composed/MapWithToolTip/MapWithToolTip";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 
 interface IEvent {
