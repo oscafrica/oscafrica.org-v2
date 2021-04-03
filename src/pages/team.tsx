@@ -10,29 +10,32 @@ const PageHeader = styled.article`
   background-size: cover;
 `;
 
+interface CoreTeam {
+  name: string,
+  image: string,
+  twitter: string
+}
+
 const TeamPage = () => {
+  const coreTeam: CoreTeam[] = [
+
+  ]
   return (
     <Layout>
       <PageHeader className="flex flex-col justify-end px-32 pb-80">
         <PageIntro
           fontSize="40"
-          heading="Our Community"
+          heading="Team"
           subHeading="Our community is spread across Africa hosted in various locations called chapters."
         />
       </PageHeader>
 
       <article className="mt-28">
-        <SectionTitle fontSize="32">Our Chapters</SectionTitle>
-        <h3 className="mt-16">Click on the location pointer for more details.</h3>
-        <div className="overflow-hidden mt-12">
-          <div className="-mt-20">
-            <iframe
-              src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
-              width="100%"
-              height="780"
-            ></iframe>
-          </div>
-        </div>
+        <SectionTitle fontSize="32">Our team</SectionTitle>
+        <h3 className="mt-16">The brains behind the awesomeness.</h3>
+        <section>
+
+        </section>
       </article>
     </Layout>
   );
