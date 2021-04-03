@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useEffect } from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import EventCard from "../components/composed/EventCard/EventCard";
@@ -22,6 +23,15 @@ const PageHeader = styled.article`
 `;
 
 const CommunityPage = () => {
+  useEffect(() => {
+    // const doAsync = async () => {
+    //   const response = await fetch("https://opencollective.com/sustainoss/events.json?limit=10&offset=0");
+    //   const data = await response.json();
+    //   console.log(data);
+    // };
+    // doAsync();
+  }, []);
+
   const testEvents: IEvent[] = [
     {
       id: 160719,
@@ -87,6 +97,15 @@ const CommunityPage = () => {
       <article className="mt-28">
         <SectionTitle fontSize="32">Our Chapters</SectionTitle>
         <h3 className="mt-16">Click on the location pointer for more details.</h3>
+        <div className="overflow-hidden mt-12">
+          <div className="-mt-20">
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
+              width="100%"
+              height="780"
+            ></iframe>
+          </div>
+        </div>
       </article>
       <article className="mt-28 pb-40">
         <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
