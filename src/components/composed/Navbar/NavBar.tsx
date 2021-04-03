@@ -14,6 +14,10 @@ interface INavLink {
 
 const navLinks: INavLink[] = [
   {
+    title: "ABOUT US",
+    href: "/about-us"
+  },
+  {
     title: "TEAM",
     href: "/team"
   },
