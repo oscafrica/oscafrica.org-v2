@@ -17,27 +17,23 @@ interface ISocialLink {
 const footerLinks: IFooterLink[] = [
   {
     title: "JOIN US",
-    href: "#"
+    href: "https://discord.gg/8STPZzN"
   },
   {
     title: "DONATE",
-    href: "#"
+    href: "https://opencollective.com/osca"
   },
   {
     title: "DOCS & HELP",
-    href: "#"
+    href: "https://docs.oscafrica.org/"
   },
   {
     title: "HOST AN EVENT",
-    href: "#"
+    href: "https://opencollective.com/osca/contribute"
   },
   {
     title: "CONTACT US",
-    href: "#"
-  },
-  {
-    title: "JOBS",
-    href: "#"
+    href: "https://twitter.com/oscafrica"
   }
 ];
 
