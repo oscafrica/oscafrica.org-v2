@@ -50,15 +50,16 @@ const IndexPage = () => {
             </div>
           </SectionWithBackground>
 
-          <SectionWithBackground background="bg-2" className="flex-grow">
-            <div className="flex flex-col bg-primary bg-opacity-30 hover:bg-opacity-60 h-full justify-end px-16 pb-16">
+          <div className="flex-grow relative bg-primary flex items-end">
+            <img src="/images/backgrounds/home-page/bg-2.png" className=" w-full hover:opacity-20 absolute top-0 left-0" />
+            <div className="flex z-40 relative flex-col justify-end px-16 pb-16">
               <SectionTitle color="white" fontSize="28">
                 Team
               </SectionTitle>
               <p className="text-white font-medium text-body mt-6 mb-16">The brains behind the awesomeness.</p>
               <ArrowLink href="#">Check out our team profiles</ArrowLink>
             </div>
-          </SectionWithBackground>
+          </div>
         </section>
       </main>
     </div>
