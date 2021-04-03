@@ -72,6 +72,7 @@ module.exports = {
         h4: "3rem",
         h5: "2.7rem",
         h6: "2rem",
+        24: "2.4rem",
         "paragraph-1": "2rem",
         "paragraph-2": "1.8rem",
         body: "1.6rem",
