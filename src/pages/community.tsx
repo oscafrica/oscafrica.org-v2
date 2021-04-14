@@ -2,18 +2,8 @@ import Link from "next/link";
 import { useEffect } from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
-import EventCard from "../components/composed/Cards/EventCard/EventCard";
 import Layout from "../components/composed/Layout/Layout";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
-
-interface IEvent {
-  id: number;
-  region: string;
-  name: string;
-  description: string;
-  image: string;
-  url: string;
-}
 
 const PageHeader = styled.article`
   min-height: 85vh;
@@ -31,33 +21,6 @@ const CommunityPage = () => {
     // };
     // doAsync();
   }, []);
-
-  const testEvents: IEvent[] = [
-    {
-      id: 160719,
-      region: "OSCA-PH",
-      name: "Excelling in Outreachy Internships, Excelling in Outreachy Internships",
-      description: "",
-      image: "/images/backgrounds/community/bg-2.png",
-      url: "https://opencollective.com/osca/events/excelling-in-outreachy-internships-35d96597"
-    },
-    {
-      id: 163719,
-      region: "OSCA-LAG",
-      name: "Excelling in Outreachy Internships, Excelling in Outreachy Internships",
-      description: "",
-      image: "/images/backgrounds/community/bg-2.png",
-      url: "https://opencollective.com/osca/events/excelling-in-outreachy-internships-35d96597"
-    },
-    {
-      id: 160090719,
-      region: "OSCA-PH",
-      name: "Excelling in Outreachy Internships, Excelling in Outreachy Internships",
-      description: "",
-      image: "/images/backgrounds/community/bg-2.png",
-      url: "https://opencollective.com/osca/events/excelling-in-outreachy-internships-35d96597"
-    }
-  ];
 
   return (
     <Layout>

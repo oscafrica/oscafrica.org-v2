@@ -4,8 +4,6 @@ import Layout from "../components/composed/Layout/Layout";
 import MemberCard from "../components/composed/Cards/MemberCard/MemberCard";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import { IMember } from "../interfaces/IMember.interface";
-import { IAdvisoryMember } from "../interfaces/IAdvisoryMember.interface";
-import AdvisoryTeamCard from "../components/composed/Cards/AdvisoryTeamCard/AdvisoryTeamCard";
 
 const CORE_MEMBERS: IMember[] = [
   {
@@ -35,34 +33,6 @@ const CORE_MEMBERS: IMember[] = [
   }
 ];
 
-const ADVISORY_MEMBERS: IAdvisoryMember[] = [
-  {
-    name: "Albert Wilson",
-    role: "Microsoft Open Source Organizer",
-    image: "/images/team/advisory/albert.png"
-  },
-  {
-    name: "Rosemary Cooper",
-    role: "Microsoft Open Source Organizer",
-    image: "/images/team/advisory/rosemary.png"
-  },
-  {
-    name: "Gloria Richards",
-    role: "Microsoft Open Source Organizer",
-    image: "/images/team/advisory/gloria.png"
-  },
-  {
-    name: "Cameron Webb",
-    role: "Microsoft Open Source Organizer",
-    image: "/images/team/advisory/gloria.png"
-  },
-  {
-    name: "Kathryn Fisher",
-    role: "Microsoft Open Source Organizer",
-    image: "/images/team/advisory/fisher.png"
-  }
-];
-
 const SeeAllMembersCardContainer = styled.article`
   & > div {
     height: 613px;
@@ -81,7 +51,7 @@ const CommunityPage = () => {
           <SectionTitle fontSize="32">The Core</SectionTitle>
         </div>
 
-        <section className="mt-20 flex flex-wrap -mx-5 -my-5">
+        <section className="mt-20 flex flex-wrap -mx-5 -my-5 pb-52">
           {CORE_MEMBERS.map((member) => (
             <MemberCard {...member} key={member.name} className="w-1/3" />
           ))}
@@ -97,16 +67,6 @@ const CommunityPage = () => {
               </a>
             </div>
           </SeeAllMembersCardContainer>
-        </section>
-      </div>
-      <div className="mt-52 pb-52">
-        <div className="pl-24">
-          <SectionTitle fontSize="32">Advisory board</SectionTitle>
-        </div>
-        <section className="mt-20 flex flex-wrap  -mx-5 -my-5">
-          {ADVISORY_MEMBERS.map((member) => (
-            <AdvisoryTeamCard {...member} key={member.name} className="w-1/4" />
-          ))}
         </section>
       </div>
     </Layout>
