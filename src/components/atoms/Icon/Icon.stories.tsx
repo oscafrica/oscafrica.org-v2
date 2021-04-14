@@ -12,6 +12,6 @@ const Template: Story<IconProps> = (args) => <Icon {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  icon: "file",
+  icon: "twitter",
   width: 24
 };
