@@ -107,19 +107,8 @@ const CommunityPage = () => {
           </div>
         </div>
       </article>
-      <article className="mt-28 pt-40 pb-40">
-        <div className="pl-24">
-          <SectionTitle fontSize="32">Upcoming Events</SectionTitle>
-          <h3 className="mt-16 mb-44">We’re always excited to meet up and have the most effective conversations</h3>
-        </div>
-        <section className="flex overflow-x-scroll max-w-full">
-          {testEvents.map((event) => (
-            <EventCard {...event} className="mr-10" />
-          ))}
-        </section>
-      </article>
 
-      <article className="py-28 bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
+      <article className="py-28 mt-40 bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
         <p className="font-lato text-gray-700 text-body text-center w-1/3 leading-10 mb-12">
           As a community, we intend to help integrate the art of open source contribution into African developer
           ecosystem whilst strongly advocating for the adoption of free and open source technologies.
