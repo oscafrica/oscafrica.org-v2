@@ -2,24 +2,44 @@
   "name": "osca-website",
   "version": "1.0.0",
   "scripts": {
+    "build:tailwind": "tailwindcss build src/styles/storybook.css -o src/styles/tailwind.output.css",
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "storybook": "npm run build:tailwind && start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "autoprefixer": "^10.0.2",
+    "@babel/core": "^7.12.9",
+    "@types/styled-components": "^5.1.5",
+    "autoprefixer": "^9",
+    "classnames": "^2.2.6",
     "cssnano": "^4.1.10",
     "next": "latest",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "tailwindcss": "^1.9.6"
+    "nprogress": "^0.2.0",
+    "postcss": "^7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-simple-maps": "^2.3.0",
+    "react-tooltip": "^4.2.11",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
-    "typescript": "4.0"
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.1.9",
+    "@types/classnames": "^2.2.11",
+    "@types/node": "^14.14.10",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "storybook-css-modules-preset": "^1.0.4",
+    "typescript": "4.1"
   },
   "license": "MIT"
 }

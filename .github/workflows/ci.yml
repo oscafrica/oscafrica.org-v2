@@ -40,7 +40,7 @@ jobs:
         if: steps.api-node-modules.outputs.cache-hit != 'true'
         run: npm install
 
-      - run: npm run analyze:lint
+      # - run: npm run analyze:lint
 
   prettier:
     runs-on: ubuntu-latest
@@ -74,7 +74,7 @@ jobs:
         if: steps.api-node-modules.outputs.cache-hit != 'true'
         run: npm install
 
-      - run: npm run analyze:prettier
+      # - run: npm run analyze:prettier
 
   test-and-coverage:
     runs-on: ubuntu-latest
@@ -112,8 +112,8 @@ jobs:
         run: |
           npx cypress install
           npm run test
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: ./coverage/lcov.info
+      # - name: Coveralls
+      #   uses: coverallsapp/github-action@master
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+          # path-to-lcov: ./coverage/lcov.info
