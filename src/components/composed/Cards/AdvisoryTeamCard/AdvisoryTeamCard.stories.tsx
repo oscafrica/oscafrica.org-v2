@@ -12,7 +12,7 @@ const Template: Story<AdvisoryTeamCardProps> = (args) => <AdvisoryTeamCard {...a
 export const Default = Template.bind({});
 
 Default.args = {
-  twitter: "https://twitter.com/alabobriggs_",
+  role: "",
   name: "Samson Goddy",
   image: "https://source.unsplash.com/featured/?logo"
 };
