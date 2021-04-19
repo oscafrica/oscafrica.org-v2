@@ -19,7 +19,7 @@ const IndexPage = () => {
   return (
     <>
       <SEOHead />
-      <div className="bg-black min-h-screen flex flex-col">
+      <div className="bg-black min-h-screen max-h-screen overflow-hidden flex flex-col">
         <NavBar tune="light" />
 
         <main className="flex min-h-screen -mt-28 flex-grow">
