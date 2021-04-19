@@ -7,15 +7,8 @@ interface SEOHeadProps {
   ogImage?: string;
 }
 
-const SEOHead: React.FC<SEOHeadProps> = ({
-  title,
-  description,
-  url,
-  ogImage
-}) => {
-  const joinedTitle = title
-    ? `${title} | OSCAfrica`
-    : "Open Source Community Africa";
+const SEOHead: React.FC<SEOHeadProps> = ({ title, description, url, ogImage }) => {
+  const joinedTitle = title ? `${title} | OSCAfrica` : "Open Source Community Africa";
 
   return (
     <NextHead>
@@ -56,11 +49,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="msapplication-TileColor" content="#EAFA35" />
       <meta name="msapplication-tap-highlight" content="yes" />
 
-      <link
-        rel="shortcut icon"
-        href="/images/osca.png"
-        type="image/png"
-      />
+      <link rel="shortcut icon" href="/images/osca.png" type="image/png" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#EAFA35" />
     </NextHead>
@@ -69,10 +58,9 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
 SEOHead.defaultProps = {
   title: "",
-  description:
-    "A community of creative minds driving the Open Source movement in Africa.",
+  description: "A community of creative minds driving the Open Source movement in Africa.",
   url: "https://oscafrica.com",
-  ogImage: "https://amazing-curran-04c311.netlify.app/images/seo/shareimage.jpg"
+  ogImage: "https://osca-v2.netlify.app/images/seo/shareimage.jpg"
 };
 
 export default SEOHead;
