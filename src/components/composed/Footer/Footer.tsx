@@ -61,14 +61,14 @@ const socialLinks: ISocialLink[] = [
 
 const Footer = () => {
   return (
-    <header className="bg-secondary px-32 pt-44 pb-16">
-      <div className="flex items-center justify-between">
+    <header className="bg-secondary px-10 lg:px-32 pt-44 pb-16">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <Logo type="svg" tune="dark" />
 
-        <nav className="flex-grow">
-          <ul className="flex items-center">
+        <nav className="lg:flex-grow py-20 lg:py-0">
+          <ul className="flex flex-col lg:flex-row lg:items-center">
             {footerLinks.map(({ title, href }) => (
-              <li className="ml-12" key={title}>
+              <li className="lg:ml-12 pb-12 lg:pb-0" key={title}>
                 <a
                   href={href}
                   target="_blank"
@@ -82,9 +82,9 @@ const Footer = () => {
           </ul>
         </nav>
 
-        <ul className="flex items-center">
+        <ul className="flex items-center w-full lg:w-auto justify-between">
           {socialLinks.map(({ title, href }) => (
-            <li className="ml-12" key={title}>
+            <li className="lg:ml-12" key={title}>
               <SocialMediaIcon
                 href={href}
                 className="text-captions font-medium tracking-widest text-white"
@@ -95,7 +95,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <p className="w-full pt-20 text-white opacity-25 font-bold text-base">
+      <p className="w-full pt-20 text-white opacity-25 text-base">
         Copyright &copy; Open Source Community Africa 2020
       </p>
     </header>

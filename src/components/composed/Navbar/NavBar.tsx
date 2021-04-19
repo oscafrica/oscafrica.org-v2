@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import Link from "next/link";
 import Logo from "../../atoms/Logo/Logo";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 interface NavbarProps {
   tune?: "dark" | "light";
@@ -32,11 +33,14 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
 
   return (
     <header
-      className={classNames("flex z-50 items-center px-32 py-8", ifLightTune ? "bg-transparent" : "bg-neutral-100")}
+      className={classNames(
+        "flex z-50 items-center justify-between lg:justify-start px-10 lg:px-32 py-8",
+        ifLightTune ? "bg-transparent" : "bg-neutral-100"
+      )}
     >
       <Logo type="svg" tune={tune} />
 
-      <nav>
+      <nav className="hidden lg:block">
         <ul className="flex items-center">
           {navLinks.map(({ title, href }) => (
             <li className="ml-12" key={title}>
@@ -67,6 +71,8 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
           </li>
         </ul>
       </nav>
+
+      <MobileMenu tune={tune} />
     </header>
   );
 };

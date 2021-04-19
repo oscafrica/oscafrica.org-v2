@@ -13,6 +13,10 @@ interface SectionTitleProps {
 
 const H2 = styled.h2`
   font-size: ${({ fontSize }: { fontSize: fontSize }) => `${fontSize}px`};
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+  }
 `;
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ children, className, color = "black", fontSize = "28" }) => {
