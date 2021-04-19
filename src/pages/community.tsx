@@ -32,7 +32,7 @@ const CommunityPage = () => {
       />
 
       <Layout>
-        <PageHeader className="flex flex-col justify-end px-32 pb-80">
+        <PageHeader className="flex flex-col justify-end px-10 lg:px-32 pb-80">
           <PageIntro
             fontSize="40"
             heading="Our Community"
@@ -40,14 +40,14 @@ const CommunityPage = () => {
           />
         </PageHeader>
 
-        <article className="flex flex-wrap">
-          <figure className="w-1/2">
+        <article className="lg:flex lg:flex-wrap">
+          <figure className="w-full lg:w-1/2">
             <img alt="oscafest" src="/images/backgrounds/community/bg-2.png" />
           </figure>
-          <figure className="w-1/2 mt-56 pl-10">
+          <figure className="w-full lg:w-1/2 lg:mt-56 lg:pl-10">
             <img alt="oscafest" src="/images/backgrounds/community/bg-3.png" />
           </figure>
-          <div className="bg-white relative py-36 px-20 w-3/5 -mt-80 z-30">
+          <div className="bg-white relative py-36 px-10 lg:px-20 w-full lg:w-3/5 lg:-mt-80 z-30">
             <SectionTitle fontSize="32">What is a chapter?</SectionTitle>
             <p className="pt-12">
               Open Source Community Africa chapter is a community closer to home.
@@ -66,8 +66,10 @@ const CommunityPage = () => {
           </div>
         </article>
         <article className="mt-28">
-          <SectionTitle fontSize="32">Our Chapters</SectionTitle>
-          <h3 className="mt-16">Click on the location pointer for more details.</h3>
+          <div className="px-10 lg:px-0">
+            <SectionTitle fontSize="32">Our Chapters</SectionTitle>
+            <h3 className="mt-16">Click on the location pointer for more details.</h3>
+          </div>
           <div className="overflow-hidden mt-12">
             <div className="-mt-20">
               <iframe
@@ -79,7 +81,7 @@ const CommunityPage = () => {
           </div>
         </article>
 
-        <article className="py-28 mt-40 bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
+        <article className="py-28 lg:mt-40 bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
           <p className="font-lato text-gray-700 text-body text-center w-1/3 leading-10 mb-12">
             As a community, we intend to help integrate the art of open source contribution into African developer
             ecosystem whilst strongly advocating for the adoption of free and open source technologies.
