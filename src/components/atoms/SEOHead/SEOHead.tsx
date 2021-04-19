@@ -58,7 +58,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
       <link
         rel="shortcut icon"
-        href="/images/logo/dark/osca.png"
+        href="/images/osca.png"
         type="image/png"
       />
       <meta name="msapplication-TileColor" content="#ffffff" />
