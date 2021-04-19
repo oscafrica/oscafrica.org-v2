@@ -72,7 +72,7 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
         </ul>
       </nav>
 
-      <MobileMenu />
+      <MobileMenu tune={tune} />
     </header>
   );
 };

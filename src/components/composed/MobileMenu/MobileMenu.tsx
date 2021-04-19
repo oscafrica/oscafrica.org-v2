@@ -51,7 +51,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
   return (
     <div className="lg:hidden" onBlur={onBlurHandler} onFocus={onFocusHandler}>
       <button className="flex items-center focus:outline-none" onClick={onClickHandler}>
-        <img alt="collapse" src={`/images/icons/util/${ifLightTune ? "collapse" : "collapse-light"}.svg`} />
+        <img alt="collapse" src={`/images/icons/util/${ifLightTune ? "collapse-light" : "collapse"}.svg`} />
       </button>
 
       <HiddenDropDown
