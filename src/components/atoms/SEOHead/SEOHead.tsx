@@ -14,7 +14,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   ogImage
 }) => {
   const joinedTitle = title
-    ? `${title} | Parallel`
+    ? `${title} | OSCAfrica`
     : "Open Source Community Africa";
 
   return (
@@ -44,15 +44,11 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
-      <link
-        rel="apple-touch-icon"
-        sizes="192x192"
-        href="/images/pwa/icons/icon-144x144.png"
-      />
-      <meta name="application-name" content="Parallel" />
+      <link rel="apple-touch-icon" sizes="192x192" href="/images/pwa/icons/icon-144x144.png" />
+      <meta name="application-name" content="OSCAfrica" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="OSCA" />
+      <meta name="apple-mobile-web-app-title" content="OSCAfrica" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="mobile-web-app-capable" content="yes" />
 
@@ -62,7 +58,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
       <link
         rel="shortcut icon"
-        href="/images/logo/colored-png.png"
+        href="/images/logo/dark/osca.png"
         type="image/png"
       />
       <meta name="msapplication-TileColor" content="#ffffff" />
