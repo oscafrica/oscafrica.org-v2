@@ -31,7 +31,7 @@ export interface MobileMenuProps {
 const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
   const ifLightTune = tune === "light";
 
-  const [showHiddenDropdown, setShowHiddenDropdown] = useState(true);
+  const [showHiddenDropdown, setShowHiddenDropdown] = useState(false);
   let timeOutId: number | any = 0;
 
   const onClickHandler = () => {
