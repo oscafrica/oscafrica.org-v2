@@ -22,7 +22,7 @@ const IndexPage = () => {
       <div className="bg-black lg:min-h-screen lg:max-h-screen overflow-hidden flex flex-col">
         <NavBar tune="light" />
 
-        <main className="flex flex-col lg:flex-row min-h-screen -mt-28 flex-grow">
+        <div className="flex flex-col lg:flex-row min-h-screen -mt-28 flex-grow">
           <SectionWithBackground background="bg-1" className="w-full h-full lg:h-auto lg:w-2/3">
             <div className="min-h-full bg-secondary pt-96 lg:pt-0 hover:bg-opacity-80 bg-opacity-50 w-full px-10 lg:pl-32 flex flex-col justify-end items-start pb-48 lg:pb-72">
               <SectionTitle color="white" fontSize="40" className="pt-16 lg:pt-0">
@@ -66,7 +66,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-        </main>
+        </div>
       </div>
     </>
   );

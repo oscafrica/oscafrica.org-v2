@@ -21,7 +21,7 @@ const AboutUsPage = () => {
         ogImage="/images/backgrounds/about-us/bg-2.png"
       />
       <Layout>
-        <PageHeader className="flex flex-col justify-end px-32 pb-80">
+        <PageHeader className="flex flex-col justify-end px-10 lg:px-32 pb-80">
           <PageIntro
             fontSize="40"
             heading="The Next Billion Creators"
@@ -33,7 +33,7 @@ const AboutUsPage = () => {
           <figure>
             <img alt="oscafest" src="/images/backgrounds/about-us/bg-2.png" />
           </figure>
-          <div className="bg-white relative py-36 px-20 w-3/5 -mt-40 z-30">
+          <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
             <SectionTitle fontSize="32">Who we are</SectionTitle>
             <p className="pt-12">
               Open Source Community Africa (O.S.C.A) is for open source lovers, enthusiasts, advocates and experts
@@ -46,11 +46,11 @@ const AboutUsPage = () => {
             </p>
           </div>
         </article>
-        <article className="flex items-end mt-16">
-          <figure className="w-3/5">
+        <article className="lg:flex lg:items-end lg:mt-16">
+          <figure className="w-full lg:w-3/5">
             <img alt="oscafest" src="/images/backgrounds/about-us/bg-3.png" />
           </figure>
-          <div className="bg-white relative py-20 w-1/2 px-20 -ml-40 -mb-40 z-30">
+          <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 lg:-mb-40 z-30">
             <SectionTitle fontSize="32">Mission</SectionTitle>
             <p className="pt-12">
               We are a diverse community of open source lovers, collaborating on different projects to make a difference
@@ -68,8 +68,11 @@ const AboutUsPage = () => {
             </p>
           </div>
         </article>
-        <article className="flex items-end mt-64">
-          <div className="bg-white relative py-20 w-1/2 px-20 -mr-40 -mb-40 z-30">
+        <article className="lg:flex lg:items-end lg:mt-64">
+          <figure className="w-full lg:w-3/5 block lg:hidden">
+            <img alt="oscafest" src="/images/backgrounds/about-us/bg-4.png" />
+          </figure>
+          <div className="bg-white relative py-20 lg:w-1/2 px-10 lg:px-20 lg:-mr-40 lg:-mb-40 z-30">
             <SectionTitle fontSize="32">Our Vision</SectionTitle>
             <p className="pt-12">
               In due time, we hope technological skills would be at the grassroots of Africa.
@@ -85,15 +88,15 @@ const AboutUsPage = () => {
               source lovers, collaborating on different projects to make a difference across Africa.
             </p>
           </div>
-          <figure className="w-3/5">
+          <figure className="w-full hidden lg:block lg:w-3/5">
             <img alt="oscafest" src="/images/backgrounds/about-us/bg-4.png" />
           </figure>
         </article>
-        <article className="flex mt-64 -mx-32">
-          <figure className="w-1/2">
+        <article className="lg:flex lg:mt-64 lg:-mx-32">
+          <figure className="w-full lg:w-1/2">
             <img alt="oscafest" src="/images/backgrounds/about-us/bg-5.png" />
           </figure>
-          <div className="bg-blue-900 min-h-full flex flex-col items-start justify-center px-24 py-20 w-1/2">
+          <div className="min-h-full flex flex-col items-start justify-center px-10 lg:px-24 py-20 w-full lg:w-1/2 bg-blue-theme">
             <SectionTitle fontSize="32" color="white">
               Our Community
             </SectionTitle>
