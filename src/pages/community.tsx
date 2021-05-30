@@ -23,7 +23,12 @@ const StyledFigure = styled.figure`
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, image }) => {
   return (
     <StyledFigure className={classNames("relative w-full bg-neutral-200", className)}>
-      <Image objectFit="cover" layout="fill" alt={`community image ${image}`} src={`/images/backgrounds/community/bg-${image}.png`} />
+      <Image
+        objectFit="cover"
+        layout="fill"
+        alt={`community image ${image}`}
+        src={`/images/backgrounds/community/bg-${image}.png`}
+      />
     </StyledFigure>
   );
 };
@@ -38,7 +43,7 @@ const CommunityPage = () => {
       />
 
       <Layout>
-        <StyledMainSection className="flex flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
+        <StyledMainSection className="flex w-full items-center flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
           <Image
             objectFit="cover"
             className="z-10"
@@ -46,7 +51,7 @@ const CommunityPage = () => {
             alt="oscafest"
             src="/images/backgrounds/community/bg-1.png"
           />
-          <div className="relative z-50">
+          <div className="relative z-50 w-full max-w-1440">
             <PageIntro
               fontSize="40"
               heading="Our Community"
@@ -55,47 +60,48 @@ const CommunityPage = () => {
           </div>
         </StyledMainSection>
 
-        <article className="lg:flex lg:flex-wrap">
-          <ImageBackground image={2} className="lg:w-1/2" />
-          <div className="lg:w-1/2 lg:mt-56 lg:pl-10">
-            <ImageBackground image={3} />
-          </div>
-
-          <div className="bg-white relative py-36 px-10 lg:px-20 w-full lg:w-3/5 lg:-mt-80 z-30">
-            <SectionTitle fontSize="32">What is a chapter?</SectionTitle>
-            <p className="pt-12">
-              Open Source Community Africa chapter is a community closer to home.
-              <br />
-              <br />
-              It typically consists of a group of people coming together to organize and facilitate meetups, creating an
-              environment of support in possible areas of challenge while following the O.S.C.A Code of Conduct.
-              <br />
-              <br />
-              <Link href="/about-us">
-                <a className="bg-white inline-flex items-center font-medium hover:bg-primary hover:text-black text-primary rounded-primary duration-200 transition-all py-4 px-8">
-                  Host an event
-                </a>
-              </Link>
-            </p>
-          </div>
-        </article>
-        <article className="mt-28">
-          <div className="px-10 lg:px-0">
-            <SectionTitle fontSize="32">Our Chapters</SectionTitle>
-            <h3 className="mt-16">Click on the location pointer for more details.</h3>
-          </div>
-          <div className="overflow-hidden mt-12">
-            <div className="-mt-20">
-              <iframe
-                src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
-                width="100%"
-                height="780"
-              />
+        <section className="w-full max-w-1440">
+          <article className="lg:flex lg:flex-wrap">
+            <ImageBackground image={2} className="lg:w-1/2" />
+            <div className="lg:w-1/2 lg:mt-56 lg:pl-10">
+              <ImageBackground image={3} />
             </div>
-          </div>
-        </article>
 
-        <article className="py-28 lg:mt-40 bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
+            <div className="bg-white relative py-36 px-10 lg:px-20 w-full lg:w-3/5 lg:-mt-80 z-30">
+              <SectionTitle fontSize="32">What is a chapter?</SectionTitle>
+              <p className="pt-12">
+                Open Source Community Africa chapter is a community closer to home.
+                <br />
+                <br />
+                It typically consists of a group of people coming together to organize and facilitate meetups, creating
+                an environment of support in possible areas of challenge while following the O.S.C.A Code of Conduct.
+                <br />
+                <br />
+                <Link href="/about-us">
+                  <a className="bg-white inline-flex items-center font-medium hover:bg-primary hover:text-black text-primary rounded-primary duration-200 transition-all py-4 px-8">
+                    Host an event
+                  </a>
+                </Link>
+              </p>
+            </div>
+          </article>
+          <article className="mt-28">
+            <div className="px-10 lg:px-0">
+              <SectionTitle fontSize="32">Our Chapters</SectionTitle>
+              <h3 className="mt-16">Click on the location pointer for more details.</h3>
+            </div>
+            <div className="overflow-hidden mt-12">
+              <div className="-mt-20">
+                <iframe
+                  src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
+                  width="100%"
+                  height="780"
+                />
+              </div>
+            </div>
+          </article>
+        </section>
+        <section className="py-28 lg:mt-40 w-screen bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
           <p className="font-lato text-gray-700 text-body text-center w-1/3 leading-10 mb-12">
             As a community, we intend to help integrate the art of open source contribution into African developer
             ecosystem whilst strongly advocating for the adoption of free and open source technologies.
@@ -108,7 +114,7 @@ const CommunityPage = () => {
           >
             Join our community
           </a>
-        </article>
+        </section>
       </Layout>
     </>
   );

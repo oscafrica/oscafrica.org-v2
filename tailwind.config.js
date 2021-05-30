@@ -82,6 +82,13 @@ module.exports = {
       },
       borderRadius: {
         primary: "10px"
+      },
+      maxWidth: {
+        1440: "1440px",
+        800: "800px"
+      },
+      minWidth: {
+        screen: "100vw"
       }
     }
   },

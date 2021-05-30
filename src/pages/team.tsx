@@ -54,7 +54,7 @@ const CommunityPage = () => {
         ogImage="/images/backgrounds/community/bg-1.png"
       />
       <Layout>
-        <StyledMainSection className="flex flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
+        <StyledMainSection className="flex w-full flex-col items-center bg-secondary relative justify-end px-10 lg:px-32 pb-80">
           <Image
             objectFit="cover"
             className="z-10"
@@ -62,12 +62,12 @@ const CommunityPage = () => {
             alt="oscafest"
             src="/images/backgrounds/team/bg-1.png"
           />
-          <div className="relative z-50">
+          <div className="relative z-50 w-full max-w-1440">
             <PageIntro fontSize="40" heading="Our Team" subHeading="The brains behind the awesomeness." />
           </div>
         </StyledMainSection>
 
-        <div className="mt-28">
+        <div className="mt-28 w-full max-w-1440">
           <div className="lg:pl-24 pl-10 mb-20">
             <SectionTitle fontSize="32">The Core</SectionTitle>
           </div>

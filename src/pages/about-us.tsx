@@ -42,7 +42,7 @@ const AboutUsPage = () => {
         ogImage="/images/backgrounds/about-us/bg-2.png"
       />
       <Layout>
-        <StyledMainSection className="flex flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
+        <StyledMainSection className="flex flex-col items-center bg-secondary w-full relative justify-end px-10 lg:px-32 pb-80">
           <Image
             objectFit="cover"
             className="z-10"
@@ -50,7 +50,7 @@ const AboutUsPage = () => {
             alt="oscafest"
             src="/images/backgrounds/about-us/bg-1.png"
           />
-          <div className="relative z-50">
+          <div className="relative z-50 w-full max-w-1440">
             <PageIntro
               fontSize="40"
               heading="The Next Billion Creators"
@@ -59,9 +59,9 @@ const AboutUsPage = () => {
           </div>
         </StyledMainSection>
 
-        <section>
+        <section className="w-full max-w-1440 ">
           <article className="w-full">
-            <ImageBackground image={2} className="lg:w-3/5" />
+            <ImageBackground image={2} className="lg:w-full" />
             <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
               <SectionTitle fontSize="32">Who we are</SectionTitle>
               <p className="pt-12">
@@ -117,27 +117,26 @@ const AboutUsPage = () => {
             </div>
             <ImageBackground image={4} className="hidden lg:block lg:w-3/5" />
           </article>
-          <article className="lg:flex lg:mt-64 lg:-mx-32">
-            <ImageBackground image={5} className="lg:w-1/2" />
-
-            <div className="min-h-full flex flex-col items-start justify-center px-10 lg:px-24 py-20 w-full lg:w-1/2 bg-blue-theme">
-              <SectionTitle fontSize="32" color="white">
-                Our Community
-              </SectionTitle>
-              <p className="mt-12 mb-16 text-white">
-                Our community is a safe enabling environment on zulip chat, consisting of diverse people all working
-                together to grow a collaborative system.
-                <br />
-                <br />
-                Currently we have smaller communities of people in a particular city called chapters; OSCA Lagos, OSCA
-                Port-Harcourt, OSCA Imo and OSCA Lokoja. Each of this chapters have successfully hosted a physical
-                meetup.
-              </p>
-
-              <ArrowLink href="/community">Check out our community</ArrowLink>
-            </div>
-          </article>
         </section>
+        <article className="lg:flex w-screen lg:mt-64 lg:-mx-32">
+          <ImageBackground image={5} className="lg:w-1/2" />
+
+          <div className="min-h-full flex flex-col items-start justify-center px-10 lg:px-24 py-20 w-full lg:w-1/2 bg-blue-theme">
+            <SectionTitle fontSize="32" color="white">
+              Our Community
+            </SectionTitle>
+            <p className="mt-12 mb-16 text-white">
+              Our community is a safe enabling environment on zulip chat, consisting of diverse people all working
+              together to grow a collaborative system.
+              <br />
+              <br />
+              Currently we have smaller communities of people in a particular city called chapters; OSCA Lagos, OSCA
+              Port-Harcourt, OSCA Imo and OSCA Lokoja. Each of this chapters have successfully hosted a physical meetup.
+            </p>
+
+            <ArrowLink href="/community">Check out our community</ArrowLink>
+          </div>
+        </article>
       </Layout>
     </>
   );
