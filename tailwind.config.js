@@ -62,7 +62,8 @@ module.exports = {
           500: "#79818F",
           600: "#565E6B",
           700: "#3C444F",
-          800: "#1E252E"
+          800: "#1E252E",
+          900: "#5A75AB"
         }
       },
       fontSize: {
@@ -81,6 +82,13 @@ module.exports = {
       },
       borderRadius: {
         primary: "10px"
+      },
+      maxWidth: {
+        1440: "1440px",
+        800: "800px"
+      },
+      minWidth: {
+        screen: "100vw"
       }
     }
   },

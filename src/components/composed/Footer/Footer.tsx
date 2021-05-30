@@ -73,7 +73,7 @@ const Footer = () => {
                   href={href}
                   target="_blank"
                   rel="noreferrer noopenner"
-                  className="text-captions font-medium tracking-widest text-white"
+                  className="text-captions hover:text-primary border-transparent border-b hover:border-primary font-medium tracking-widest text-white"
                 >
                   {title}
                 </a>

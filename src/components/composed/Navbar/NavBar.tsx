@@ -47,7 +47,7 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
               <Link href={href}>
                 <a
                   className={classNames(
-                    "text-captions font-medium tracking-widest",
+                    "text-captions hover:text-primary border-b border-transparent hover:border-primary font-medium tracking-widest",
                     ifLightTune ? " text-white" : " text-black"
                   )}
                 >
@@ -62,7 +62,7 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
               target="_blank"
               rel="noreferrer noopenner"
               className={classNames(
-                "text-captions font-medium tracking-widest uppercase",
+                "text-captions font-medium hover:text-primary tracking-widest uppercase",
                 ifLightTune ? " text-white" : " text-black"
               )}
             >
