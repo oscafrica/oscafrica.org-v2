@@ -23,7 +23,7 @@ const StyledFigure = styled.figure`
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, image }) => {
   return (
     <StyledFigure className={classNames("relative w-full bg-neutral-200", className)}>
-      <Image objectFit="cover" layout="fill" alt="oscafest" src={`/images/backgrounds/community/bg-${image}.png`} />
+      <Image objectFit="cover" layout="fill" alt={`community image ${image}`} src={`/images/backgrounds/community/bg-${image}.png`} />
     </StyledFigure>
   );
 };
