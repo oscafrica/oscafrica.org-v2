@@ -54,7 +54,7 @@ const CommunityPage = () => {
         </PageHeader>
 
         <div className="mt-28">
-          <div className="lg:pl-24 pl-10">
+          <div className="lg:pl-24 pl-10 mb-20">
             <SectionTitle fontSize="32">The Core</SectionTitle>
           </div>
 
