@@ -1,28 +1,34 @@
+import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
 import styled from "styled-components";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import Layout from "../components/composed/Layout/Layout";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 
-const PageHeader = styled.article`
-  min-height: 85vh;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.66) 21.24%, rgba(0, 0, 0, 0) 60.68%),
-    url("/images/backgrounds/community/bg-1.png");
-  background-size: cover;
+interface ImageBackgroundProps {
+  image: 1 | 2 | 3 | 4 | 5;
+  className?: string;
+}
+
+const StyledMainSection = styled.main`
+  height: 677px;
 `;
 
-const CommunityPage = () => {
-  useEffect(() => {
-    // const doAsync = async () => {
-    //   const response = await fetch("https://opencollective.com/sustainoss/events.json?limit=10&offset=0");
-    //   const data = await response.json();
-    //   console.log(data);
-    // };
-    // doAsync();
-  }, []);
+const StyledFigure = styled.figure`
+  height: 725px;
+`;
 
+const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, image }) => {
+  return (
+    <StyledFigure className={classNames("relative w-full bg-neutral-200", className)}>
+      <Image objectFit="cover" layout="fill" alt="oscafest" src={`/images/backgrounds/community/bg-${image}.png`} />
+    </StyledFigure>
+  );
+};
+
+const CommunityPage = () => {
   return (
     <>
       <SEOHead
@@ -32,21 +38,29 @@ const CommunityPage = () => {
       />
 
       <Layout>
-        <PageHeader className="flex flex-col justify-end px-10 lg:px-32 pb-80">
-          <PageIntro
-            fontSize="40"
-            heading="Our Community"
-            subHeading="Our community is spread across Africa hosted in various locations called chapters."
+        <StyledMainSection className="flex flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
+          <Image
+            objectFit="cover"
+            className="z-10"
+            layout="fill"
+            alt="oscafest"
+            src="/images/backgrounds/community/bg-1.png"
           />
-        </PageHeader>
+          <div className="relative z-50">
+            <PageIntro
+              fontSize="40"
+              heading="Our Community"
+              subHeading="Our community is spread across Africa hosted in various locations called chapters."
+            />
+          </div>
+        </StyledMainSection>
 
         <article className="lg:flex lg:flex-wrap">
-          <figure className="w-full lg:w-1/2">
-            <img alt="oscafest" src="/images/backgrounds/community/bg-2.png" />
-          </figure>
-          <figure className="w-full lg:w-1/2 lg:mt-56 lg:pl-10">
-            <img alt="oscafest" src="/images/backgrounds/community/bg-3.png" />
-          </figure>
+          <ImageBackground image={2} className="lg:w-1/2" />
+          <div className="lg:w-1/2 lg:mt-56 lg:pl-10">
+            <ImageBackground image={3} />
+          </div>
+
           <div className="bg-white relative py-36 px-10 lg:px-20 w-full lg:w-3/5 lg:-mt-80 z-30">
             <SectionTitle fontSize="32">What is a chapter?</SectionTitle>
             <p className="pt-12">
@@ -76,7 +90,7 @@ const CommunityPage = () => {
                 src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
                 width="100%"
                 height="780"
-              ></iframe>
+              />
             </div>
           </div>
         </article>
@@ -90,7 +104,7 @@ const CommunityPage = () => {
             target="_blank"
             rel="noreferrer noopener"
             href="https://discord.gg/8STPZzN"
-            className=" text-primary text-body py-4 px-7 rounded-lg hover:text-black hover:bg-primary leading-10"
+            className=" text-primary duration-200 text-body py-4 px-7 rounded-lg hover:text-black hover:bg-primary leading-10"
           >
             Join our community
           </a>

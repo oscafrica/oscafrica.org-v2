@@ -12,12 +12,6 @@ interface ImageBackgroundProps {
   className?: string;
 }
 
-const ArticleContainer = styled.section`
-  .osca-img-1 {
-    height: 732px;
-  }
-`;
-
 const StyledMainSection = styled.main`
   height: 677px;
 `;
@@ -60,11 +54,9 @@ const AboutUsPage = () => {
           </div>
         </StyledMainSection>
 
-        <ArticleContainer>
+        <section>
           <article className="w-full">
-            <figure className="osca-img-1 w-full  relative h-72 bg-neutral-200">
-              <Image objectFit="cover" layout="fill" alt="oscafest" src="/images/backgrounds/about-us/bg-2.png" />
-            </figure>
+            <ImageBackground image={2} className="lg:w-3/5" />
             <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
               <SectionTitle fontSize="32">Who we are</SectionTitle>
               <p className="pt-12">
@@ -140,7 +132,7 @@ const AboutUsPage = () => {
               <ArrowLink href="/community">Check out our community</ArrowLink>
             </div>
           </article>
-        </ArticleContainer>
+        </section>
       </Layout>
     </>
   );
