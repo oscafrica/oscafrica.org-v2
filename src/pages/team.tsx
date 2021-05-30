@@ -5,6 +5,7 @@ import MemberCard from "../components/composed/Cards/MemberCard/MemberCard";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import { IMember } from "../interfaces/IMember.interface";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
+import Image from "next/image";
 
 const CORE_MEMBERS: IMember[] = [
   {
@@ -40,6 +41,10 @@ const SeeAllMembersCardContainer = styled.article`
   }
 `;
 
+const StyledMainSection = styled.main`
+  height: 677px;
+`;
+
 const CommunityPage = () => {
   return (
     <>
@@ -49,9 +54,18 @@ const CommunityPage = () => {
         ogImage="/images/backgrounds/community/bg-1.png"
       />
       <Layout>
-        <PageHeader className="flex flex-col justify-end px-10 lg:px-32 pb-80">
-          <PageIntro fontSize="40" heading="Our Team" subHeading="The brains behind the awesomeness." />
-        </PageHeader>
+        <StyledMainSection className="flex flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
+          <Image
+            objectFit="cover"
+            className="z-10"
+            layout="fill"
+            alt="oscafest"
+            src="/images/backgrounds/team/bg-1.png"
+          />
+          <div className="relative z-50">
+            <PageIntro fontSize="40" heading="Our Team" subHeading="The brains behind the awesomeness." />
+          </div>
+        </StyledMainSection>
 
         <div className="mt-28">
           <div className="lg:pl-24 pl-10 mb-20">
@@ -80,12 +94,5 @@ const CommunityPage = () => {
     </>
   );
 };
-
-const PageHeader = styled.article`
-  min-height: 85vh;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.66) 21.24%, rgba(0, 0, 0, 0) 60.68%),
-    url("/images/backgrounds/community/bg-1.png");
-  background-size: cover;
-`;
 
 export default CommunityPage;
