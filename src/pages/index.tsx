@@ -32,7 +32,7 @@ const IndexPage = () => {
                 A community of creative minds driving the Open Source movement in Africa.
               </p>
               <Link href="/about-us">
-                <a className="bg-white hidden lg:inline-block font-medium hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
+                <a className="bg-white text-base hidden lg:inline-block font-medium hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
                   Who we are
                 </a>
               </Link>
@@ -41,7 +41,7 @@ const IndexPage = () => {
 
           <section className="w-full h-screen lg:h-auto lg:w-1/3 flex flex-col">
             <SectionWithBackground background="bg-2" className="flex-grow">
-              <div className="flex flex-col bg-blue-500 bg-opacity-30 hover:bg-opacity-80 h-full justify-end px-16 pb-16">
+              <div className="flex flex-col items-start bg-blue-500 bg-opacity-30 hover:bg-opacity-80 h-full justify-end px-16 pb-16">
                 <SectionTitle color="white" fontSize="28">
                   Community
                 </SectionTitle>
