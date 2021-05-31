@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ArrowLink from "../components/atoms/ArrowLink/ArrowLink";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
@@ -14,8 +15,11 @@ const IndexPage = () => {
         <div className="flex flex-col lg:flex-row min-h-screen -mt-28 flex-grow">
           <main className="w-full  h-full lg:h-auto lg:w-2/3">
             <div className="min-h-full bg-secondary relative duration-20 pt-96 lg:pt-0 w-full px-10 lg:pl-32 flex flex-col justify-end items-start pb-48 lg:pb-72">
-              <img
-                className="osca-main-bg object-cover w-full duration-200 z-10 absolute hover:opacity-20 top-0 left-0"
+              <Image
+                objectFit="cover"
+                className="z-10 hover:opacity-20 duration-200 w-full"
+                layout="fill"
+                alt="oscafest"
                 src="/images/backgrounds/home-page/bg-1.png"
               />
 
@@ -37,10 +41,14 @@ const IndexPage = () => {
 
           <section className="w-full h-screen lg:h-auto lg:w-1/3 flex flex-col">
             <section className="flex-grow flex items-end relative bg-neutral-900">
-              <img
+              <Image
+                objectFit="cover"
+                className="z-10 hover:opacity-30 duration-200 w-full"
+                layout="fill"
+                alt="osca bg-2"
                 src="/images/backgrounds/home-page/bg-2.png"
-                className=" w-full hover:opacity-30 z-10 h-full duration-200 absolute top-0 left-0"
               />
+
               <div className="inline-flex relative z-50 flex-col items-start justify-end px-16 pb-16">
                 <SectionTitle color="white" fontSize="28">
                   Community
@@ -53,9 +61,12 @@ const IndexPage = () => {
             </section>
 
             <section className="flex-grow bg-primary relative flex items-end">
-              <img
+              <Image
+                objectFit="cover"
+                className="z-10 hover:opacity-30 duration-200 w-full"
+                layout="fill"
+                alt="osca bg-3"
                 src="/images/backgrounds/home-page/bg-3.png"
-                className=" w-full hover:opacity-30 h-full duration-200 absolute top-0 left-0"
               />
               <div className="flex z-40 relative flex-col items-start justify-end px-16 pb-16">
                 <SectionTitle color="white" fontSize="28">
