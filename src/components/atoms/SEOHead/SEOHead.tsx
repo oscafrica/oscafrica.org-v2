@@ -22,7 +22,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({ title, description, url, ogImage }) =
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
       />
       <link rel="manifest" href="/manifest.json" />
-      <meta name="theme-color" content="#EAFA35" />
+      <meta name="theme-color" content="#F9AA4F" />
       <meta name="keywords" content="Job, Hire" />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={joinedTitle} />
@@ -46,21 +46,22 @@ const SEOHead: React.FC<SEOHeadProps> = ({ title, description, url, ogImage }) =
       <meta name="mobile-web-app-capable" content="yes" />
 
       <meta name="msapplication-config" content="/browserconfig.xml" />
-      <meta name="msapplication-TileColor" content="#EAFA35" />
+      <meta name="msapplication-TileColor" content="#F9AA4F" />
       <meta name="msapplication-tap-highlight" content="yes" />
 
       <link rel="shortcut icon" href="/images/osca.png" type="image/png" />
       <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="theme-color" content="#EAFA35" />
+      <meta name="theme-color" content="#F9AA4F" />
     </NextHead>
   );
 };
+
 
 SEOHead.defaultProps = {
   title: "",
   description: "A community of creative minds driving the Open Source movement in Africa.",
   url: "https://oscafrica.com",
-  ogImage: "https://osca-v2.netlify.app/images/seo/shareimage.jpg"
+  ogImage: "https://oscafrica.vercel.app/images/seo/shareimage.jpeg"
 };
 
 export default SEOHead;
