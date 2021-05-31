@@ -61,7 +61,7 @@ SEOHead.defaultProps = {
   title: "",
   description: "A community of creative minds driving the Open Source movement in Africa.",
   url: "https://oscafrica.com",
-  ogImage: "https://oscafrica.vercel.app/images/seo/shareimage.jpg"
+  ogImage: "https://oscafrica.vercel.app/images/seo/shareimage.jpeg"
 };
 
 export default SEOHead;
