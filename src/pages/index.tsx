@@ -31,7 +31,7 @@ const IndexPage = () => {
                   A community of creative minds driving the Open Source movement in Africa.
                 </p>
                 <Link href="/about-us">
-                  <a className="bg-white text-base hidden lg:inline-block font-medium hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
+                  <a className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
                     Who we are
                   </a>
                 </Link>
