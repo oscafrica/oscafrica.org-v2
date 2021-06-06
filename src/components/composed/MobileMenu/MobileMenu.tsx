@@ -3,6 +3,7 @@ import classNames from "classnames";
 import styled from "styled-components";
 import Logo from "../../atoms/Logo/Logo";
 import Link from "next/link";
+import Icon from "../../atoms/Icon/Icon";
 
 interface NavLinkInterface {
   title: string;
@@ -62,6 +63,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
       >
         <div className=" flex justify-between">
           <Logo tune="dark" type="svg" />
+
+          <button onClick={onClickHandler} className="focus:outline-none" name="close mobile menu">
+            <Icon icon="close" width={20} />
+          </button>
         </div>
         <ul className=" px-8 mt-24">
           {navLinks.map(({ title, href }) => (
@@ -99,7 +104,7 @@ const HiddenDropDown = styled.nav`
   height: 100vh;
   background-color: white;
 
-  z-index: 1000;
+  z-index: 10000;
   overflow: hidden;
 
   ul {

@@ -101,8 +101,8 @@ const CommunityPage = () => {
             </div>
           </article>
         </section>
-        <section className="py-28 lg:mt-40 w-screen bg-primary bg-opacity-10 -mx-32 flex flex-col items-center">
-          <p className="font-lato text-gray-700 text-body text-center w-1/3 leading-10 mb-12">
+        <section className="py-28 lg:mt-40 w-screen bg-primary bg-opacity-10 lg:-mx-32 flex flex-col items-center">
+          <p className="font-lato text-gray-700 text-body text-center px-10 lg:px-0 lg:w-1/3 leading-10 mb-12">
             As a community, we intend to help integrate the art of open source contribution into African developer
             ecosystem whilst strongly advocating for the adoption of free and open source technologies.
           </p>

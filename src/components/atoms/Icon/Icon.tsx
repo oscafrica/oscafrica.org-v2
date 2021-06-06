@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-type Icon = "twitter";
+type Icon = "twitter" | 'close';
 
 interface IconProps {
   icon: Icon;
