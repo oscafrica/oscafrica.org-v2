@@ -72,9 +72,9 @@ const CommunityPage = () => {
             <SectionTitle fontSize="32">The Core</SectionTitle>
           </div>
 
-          <section className="mt-20 lg:flex lg:flex-wrap lg:-mx-5 lg:-my-5 pb-52">
+          <section className="mt-20 md:flex md:flex-wrap lg:-mx-5 lg:-my-5 pb-52">
             {CORE_MEMBERS.map((member) => (
-              <MemberCard {...member} key={member.name} className="w-full lg:w-1/3" />
+              <MemberCard {...member} key={member.name} className="w-full md:w-1/2 lg:w-1/3" />
             ))}
             <SeeAllMembersCardContainer className="w-full lg:w-1/3 lg:p-5">
               <div className="h-full w-full flex items-center justify-center bg-white">
