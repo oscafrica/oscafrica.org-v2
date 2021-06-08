@@ -50,13 +50,15 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
   };
 
   return (
-    <div className="lg:hidden" onBlur={onBlurHandler} onFocus={onFocusHandler}>
-      <button className="flex items-center focus:outline-none" onClick={onClickHandler}>
-        <img alt="collapse" src={`/images/icons/util/${ifLightTune ? "collapse-light" : "collapse"}.svg`} />
-      </button>
+    <Container className="lg:hidden" onBlur={onBlurHandler} onFocus={onFocusHandler}>
+      {!showHiddenDropdown && (
+        <button className="flex items-center focus:outline-none" onClick={onClickHandler}>
+          <img alt="collapse" src={`/images/icons/util/${ifLightTune ? "collapse-light" : "collapse"}.svg`} />
+        </button>
+      )}
 
       <HiddenDropDown
-        className={classNames("bg-dark px-10 py-8", showHiddenDropdown ? "block" : "hidden")}
+        className={classNames("px-10 py-8 fixed top-0 left-0", showHiddenDropdown ? "block" : "hidden")}
         style={{
           transform: showHiddenDropdown ? "scale(1)" : "scale(0)"
         }}
@@ -68,7 +70,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
             <Icon icon="close" width={20} />
           </button>
         </div>
-        <ul className=" px-8 mt-24">
+        <ul className=" px-8 mt-24 flex flex-col items-center">
           {navLinks.map(({ title, href }) => (
             <li className="" key={title}>
               <Link href={href}>
@@ -88,7 +90,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
           </li>
         </ul>
       </HiddenDropDown>
-    </div>
+    </Container>
   );
 };
 
@@ -98,8 +100,7 @@ const HiddenDropDown = styled.nav`
   left: 0;
   transition: 0.2s all;
   transform-origin: 100% 0;
-  min-width: 80vw;
-  max-width: 80vw;
+  width: 100vw;
   transition: 0.2s all;
   height: 100vh;
   background-color: white;
@@ -116,6 +117,10 @@ const HiddenDropDown = styled.nav`
     line-height: 24px;
     padding-bottom: 21px;
   }
+`;
+
+const Container = styled.header`
+  z-index: 100000;
 `;
 
 export default MobileMenu;

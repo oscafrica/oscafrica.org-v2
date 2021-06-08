@@ -23,14 +23,14 @@ const IndexPage = () => {
                 src="/images/backgrounds/home-page/bg-1.png"
               />
 
-              <div className=" z-50">
+              <div className=" z-20">
                 <SectionTitle color="white" fontSize="40" className="pt-16 lg:pt-0">
                   The Next Billion Creators
                 </SectionTitle>
                 <p className="text-white font-medium lg:w-1/2 text-paragraph-2 mb-16 mt-8">
                   A community of creative minds driving the Open Source movement in Africa.
                 </p>
-                <Link href="/about-us">
+                <Link href="/about-us" passHref>
                   <a className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
                     Who we are
                   </a>
