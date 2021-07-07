@@ -17,6 +17,7 @@ const StyledMainSection = styled.main`
 `;
 
 const StyledFigure = styled.figure`
+  min-height: 725px;
   height: 725px;
 `;
 
