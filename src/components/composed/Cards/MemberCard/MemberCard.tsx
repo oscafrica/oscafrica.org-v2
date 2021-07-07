@@ -3,7 +3,6 @@ import classNames from "classnames";
 import styled from "styled-components";
 import Icon from "../../../atoms/Icon/Icon";
 import { IMember } from "../../../../interfaces/IMember.interface";
-import Image from "next/image";
 
 export interface MemberCardProps extends IMember {
   className?: string;
@@ -11,9 +10,7 @@ export interface MemberCardProps extends IMember {
 
 const CardImage = styled.figure`
   --height: 613px;
-
   height: var(--height);
-
   & > img {
     height: var(--height);
   }
@@ -40,7 +37,7 @@ const MemberCard = ({ image, name, twitter, className }: MemberCardProps) => {
     <StyledContainer className={classNames("flex flex-col justify-center p-5", className)}>
       <div className="w-full relative">
         <CardImage className="bg-neutral-200 relative">
-          <Image objectFit="cover" className="osca-img duration-200" layout="fill" src={image} alt={name} />
+          <img className="osca-img w-full object-cover duration-200" src={image} alt={name} />
         </CardImage>
         <a
           href={twitter}

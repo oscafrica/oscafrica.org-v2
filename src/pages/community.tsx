@@ -37,7 +37,7 @@ const CommunityPage = () => {
       <SEOHead
         title="Communtiy"
         description="As a community, we intend to help integrate the art of open source contribution into African developer ecosystem whilst strongly advocating for the adoption of free and open source technologies."
-        ogImage="/images/backgrounds/community/bg-3.png"
+        ogImage={COMMUNITY_IMAGES.banner.src}
       />
 
       <Layout>
