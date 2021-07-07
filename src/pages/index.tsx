@@ -49,7 +49,7 @@ const IndexPage = () => {
                 src="/images/backgrounds/home-page/bg-2.png"
               />
 
-              <div className="inline-flex relative z-50 flex-col items-start justify-end px-16 pb-16">
+              <div className="inline-flex relative z-50 flex-col items-start justify-end px-10 lg:px-16 pb-16">
                 <SectionTitle color="white" fontSize="28">
                   Community
                 </SectionTitle>
@@ -68,7 +68,7 @@ const IndexPage = () => {
                 alt="osca bg-3"
                 src="/images/backgrounds/home-page/bg-3.png"
               />
-              <div className="flex z-40 relative flex-col items-start justify-end px-16 pb-16">
+              <div className="flex z-40 relative flex-col items-start justify-end px-10 lg:px-16 pb-16">
                 <SectionTitle color="white" fontSize="28">
                   Team
                 </SectionTitle>
