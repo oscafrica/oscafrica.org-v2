@@ -9,7 +9,7 @@ interface IFooterLink {
 }
 
 interface ISocialLink {
-  href: "#";
+  href: string;
   title: SocialLink;
 }
 
@@ -38,23 +38,23 @@ const footerLinks: IFooterLink[] = [
 
 const socialLinks: ISocialLink[] = [
   {
-    href: "#",
+    href: "https://discord.gg/8STPZzN",
     title: "discord"
   },
   {
-    href: "#",
+    href: "https://twitter.com/oscafrica",
     title: "twitter"
   },
   {
-    href: "#",
+    href: "https://github.com/oscafrica",
     title: "github"
   },
   {
-    href: "#",
+    href: "https://www.instagram.com/oscafrica/",
     title: "instagram"
   },
   {
-    href: "#",
+    href: "https://www.facebook.com/opensourcecommunityafrica/",
     title: "facebook"
   }
 ];
@@ -87,7 +87,6 @@ const Footer = () => {
             <li className="lg:ml-12" key={title}>
               <SocialMediaIcon
                 href={href}
-                className="text-captions font-medium tracking-widest text-white"
                 social={title}
               />
             </li>
