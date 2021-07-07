@@ -34,9 +34,12 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
   return (
     <header
       className={classNames(
-        "flex z-40 items-center justify-between lg:justify-start px-10 lg:px-32 py-8",
+        "flex z-50 items-center justify-between sticky top-0 lg:justify-start px-10 lg:px-32 py-8",
         ifLightTune ? "bg-transparent" : "bg-neutral-100"
       )}
+      style={{
+        zIndex:100
+      }}
     >
       <Logo type="svg" tune={tune} />
 
@@ -62,7 +65,7 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
               target="_blank"
               rel="noreferrer noopenner"
               className={classNames(
-                "text-captions font-medium hover:text-primary tracking-widest uppercase",
+                "text-captions hover:text-primary border-b border-transparent hover:border-primary font-medium tracking-widest uppercase",
                 ifLightTune ? " text-white" : " text-black"
               )}
             >

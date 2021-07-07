@@ -69,7 +69,7 @@ const CommunityPage = () => {
 
             <div className="bg-white relative py-36 px-10 lg:px-20 w-full lg:w-3/5 lg:-mt-80 z-30">
               <SectionTitle fontSize="32">What is a chapter?</SectionTitle>
-              <p className="pt-12">
+              <p className="pt-12 text-body">
                 Open Source Community Africa chapter is a community closer to home.
                 <br />
                 <br />
