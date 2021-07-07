@@ -5,33 +5,35 @@ import MemberCard from "../components/composed/Cards/MemberCard/MemberCard";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import { IMember } from "../interfaces/IMember.interface";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
-import Image from "next/image";
+import { APP_IMAGES } from "../utils/images";
+
+const { team: TEAM_IMAGES } = APP_IMAGES.pages;
 
 const CORE_MEMBERS: IMember[] = [
   {
     twitter: "https://twitter.com/Samson_Goddy",
     name: "Samson Goddy",
-    image: "/images/team/core/samson.png"
+    image: TEAM_IMAGES.core.samson.src
   },
   {
     twitter: "https://twitter.com/Kolokodess",
     name: "Ada Nduka Oyom",
-    image: "/images/team/core/ada.png"
+    image: TEAM_IMAGES.core.ada.src
   },
   {
     twitter: "https://twitter.com/Peace_Ojemeh",
     name: "Peace Ojemeh",
-    image: "/images/team/core/perry.png"
+    image: TEAM_IMAGES.core.perrie.src
   },
   {
     twitter: "https://twitter.com/iambolajiayo",
     name: "Bolaji Ayodeji",
-    image: "/images/team/core/bolaji.png"
+    image: TEAM_IMAGES.core.bolaji.src
   },
   {
     twitter: "https://twitter.com/yomdroid",
     name: "Yoma Okobiah",
-    image: "/images/team/core/yoma.png"
+    image: TEAM_IMAGES.core.yoma.src
   }
 ];
 
@@ -51,16 +53,14 @@ const CommunityPage = () => {
       <SEOHead
         title="Team"
         description="The brains behind the awesomeness."
-        ogImage="/images/backgrounds/community/bg-1.png"
+        ogImage={TEAM_IMAGES.banner.src}
       />
       <Layout>
         <StyledMainSection className="flex w-full flex-col items-center bg-secondary relative justify-end px-10 lg:px-32 pb-80">
-          <Image
-            objectFit="cover"
-            className="z-10"
-            layout="fill"
-            alt="oscafest"
-            src="/images/backgrounds/team/bg-1.png"
+          <img
+            className="object-cover z-10 absolute top-0 h-full w-full left-0"
+            alt={TEAM_IMAGES.banner.alt}
+            src={TEAM_IMAGES.banner.src}
           />
           <div className="relative z-50 w-full max-w-1440">
             <PageIntro fontSize="40" heading="Our Team" subHeading="The brains behind the awesomeness." />

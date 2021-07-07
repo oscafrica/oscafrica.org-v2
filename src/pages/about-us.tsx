@@ -1,15 +1,18 @@
 import styled from "styled-components";
-import Image from "next/image";
 import ArrowLink from "../components/atoms/ArrowLink/ArrowLink";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import Layout from "../components/composed/Layout/Layout";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
 import classNames from "classnames";
+import { APP_IMAGES } from "../utils/images";
+
+const { about: ABOUT_IMAGES } = APP_IMAGES.pages;
 
 interface ImageBackgroundProps {
-  image: 1 | 2 | 3 | 4 | 5;
+  src: string;
   className?: string;
+  alt: string;
 }
 
 const StyledMainSection = styled.main`
@@ -21,15 +24,10 @@ const StyledFigure = styled.figure`
   height: 725px;
 `;
 
-const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, image }) => {
+const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {
   return (
     <StyledFigure className={classNames("relative w-full bg-neutral-200", className)}>
-      <Image
-        objectFit="cover"
-        layout="fill"
-        alt={`about us image ${image}`}
-        src={`/images/backgrounds/about-us/bg-${image}.png`}
-      />
+      <img className="object-cover" alt={alt} src={src} />
     </StyledFigure>
   );
 };
@@ -40,17 +38,16 @@ const AboutUsPage = () => {
       <SEOHead
         title="About Us"
         description=" Open Source Community Africa (O.S.C.A) is for open source lovers, enthusiasts, advocates and experts within and across Africa with the sole aim of increasing the rate of credible contributions by African software developers, designers, writers and everyone involved in the sphere of technology to open source projects both locally and globally, changing the perception of Africans from just the billion users to the NEXT BILLION CREATORS."
-        ogImage="/images/backgrounds/about-us/bg-2.png"
+        ogImage={ABOUT_IMAGES.banner.src}
       />
       <Layout>
         <StyledMainSection className="flex flex-col items-center bg-secondary w-full relative justify-end px-10 lg:px-32 pb-80">
-          <Image
-            objectFit="cover"
-            className="z-10"
-            layout="fill"
-            alt="oscafest"
-            src="/images/backgrounds/about-us/bg-1.png"
+          <img
+            className="object-cover z-10 absolute top-0 h-full w-full left-0"
+            alt={ABOUT_IMAGES.banner.alt}
+            src={ABOUT_IMAGES.banner.src}
           />
+
           <div className="relative z-50 w-full max-w-1440">
             <PageIntro
               fontSize="40"
@@ -62,7 +59,7 @@ const AboutUsPage = () => {
 
         <section className="w-full max-w-1440 ">
           <article className="w-full">
-            <ImageBackground image={2} className="lg:w-full" />
+            <ImageBackground src={ABOUT_IMAGES.bg1.src} alt={ABOUT_IMAGES.bg1.alt} className="lg:w-full" />
             <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
               <SectionTitle fontSize="32">Who we are</SectionTitle>
               <p className="pt-12">
@@ -78,7 +75,7 @@ const AboutUsPage = () => {
             </div>
           </article>
           <article className="lg:flex lg:items-end lg:mt-16">
-            <ImageBackground image={3} className="lg:w-3/5" />
+            <ImageBackground src={ABOUT_IMAGES.bg2.src} alt={ABOUT_IMAGES.bg2.alt} className="lg:w-3/5" />
             <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 lg:-mb-40 z-30">
               <SectionTitle fontSize="32">Mission</SectionTitle>
               <p className="pt-12">
@@ -98,7 +95,11 @@ const AboutUsPage = () => {
             </div>
           </article>
           <article className="lg:flex lg:items-end lg:mt-64">
-            <ImageBackground image={4} className="lg:w-3/5 lg:hidden block" />
+            <ImageBackground
+              src={ABOUT_IMAGES.bg3.src}
+              alt={ABOUT_IMAGES.bg3.alt}
+              className="lg:w-3/5 lg:hidden block"
+            />
 
             <div className="bg-white relative py-20 lg:w-1/2 px-10 lg:px-20 lg:-mr-40 lg:-mb-40 z-30">
               <SectionTitle fontSize="32">Our Vision</SectionTitle>
@@ -116,11 +117,15 @@ const AboutUsPage = () => {
                 source lovers, collaborating on different projects to make a difference across Africa.
               </p>
             </div>
-            <ImageBackground image={4} className="hidden lg:block lg:w-3/5" />
+            <ImageBackground
+              src={ABOUT_IMAGES.bg4.src}
+              alt={ABOUT_IMAGES.bg4.alt}
+              className="hidden lg:block lg:w-3/5"
+            />
           </article>
         </section>
         <article className="lg:flex w-screen lg:mt-64 lg:-mx-32">
-          <ImageBackground image={5} className="lg:w-1/2" />
+          <img src={ABOUT_IMAGES.bg1.src} alt={ABOUT_IMAGES.bg1.alt} className="lg:w-1/2 h-full" />
 
           <div className="min-h-full flex flex-col items-start justify-center px-10 lg:px-24 py-20 w-full lg:w-1/2 bg-blue-theme">
             <SectionTitle fontSize="32" color="white">

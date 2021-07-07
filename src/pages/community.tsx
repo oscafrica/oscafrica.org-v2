@@ -1,15 +1,18 @@
 import classNames from "classnames";
-import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import Layout from "../components/composed/Layout/Layout";
 import PageIntro from "../components/composed/PageIntro/PageIntro";
+import { APP_IMAGES } from "../utils/images";
+
+const { community: COMMUNITY_IMAGES } = APP_IMAGES.pages;
 
 interface ImageBackgroundProps {
-  image: 1 | 2 | 3 | 4 | 5;
+  src: string;
   className?: string;
+  alt: string;
 }
 
 const StyledMainSection = styled.main`
@@ -20,15 +23,10 @@ const StyledFigure = styled.figure`
   height: 725px;
 `;
 
-const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, image }) => {
+const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {
   return (
     <StyledFigure className={classNames("relative w-full bg-neutral-200", className)}>
-      <Image
-        objectFit="cover"
-        layout="fill"
-        alt={`community image ${image}`}
-        src={`/images/backgrounds/community/bg-${image}.png`}
-      />
+      <img className="object-cover" alt={alt} src={src} />
     </StyledFigure>
   );
 };
@@ -39,18 +37,17 @@ const CommunityPage = () => {
       <SEOHead
         title="Communtiy"
         description="As a community, we intend to help integrate the art of open source contribution into African developer ecosystem whilst strongly advocating for the adoption of free and open source technologies."
-        ogImage="/images/backgrounds/community/bg-3.png"
+        ogImage={COMMUNITY_IMAGES.banner.src}
       />
 
       <Layout>
         <StyledMainSection className="flex w-full items-center flex-col bg-secondary relative justify-end px-10 lg:px-32 pb-80">
-          <Image
-            objectFit="cover"
-            className="z-10"
-            layout="fill"
-            alt="oscafest"
-            src="/images/backgrounds/community/bg-1.png"
+          <img
+            className="object-cover z-10 absolute top-0 h-full w-full left-0"
+            alt={COMMUNITY_IMAGES.banner.alt}
+            src={COMMUNITY_IMAGES.banner.src}
           />
+
           <div className="relative z-50 w-full max-w-1440">
             <PageIntro
               fontSize="40"
@@ -62,9 +59,9 @@ const CommunityPage = () => {
 
         <section className="w-full max-w-1440">
           <article className="lg:flex lg:flex-wrap">
-            <ImageBackground image={2} className="lg:w-1/2" />
+            <ImageBackground src={COMMUNITY_IMAGES.bg2.src} alt={COMMUNITY_IMAGES.bg2.alt} className="lg:w-1/2" />
             <div className="lg:w-1/2 lg:mt-56 lg:pl-10">
-              <ImageBackground image={3} />
+              <ImageBackground src={COMMUNITY_IMAGES.bg3.src} alt={COMMUNITY_IMAGES.bg3.alt} />
             </div>
 
             <div className="bg-white relative py-36 px-10 lg:px-20 w-full lg:w-3/5 lg:-mt-80 z-30">
