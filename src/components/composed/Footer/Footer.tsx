@@ -56,6 +56,10 @@ const socialLinks: ISocialLink[] = [
   {
     href: "https://www.facebook.com/opensourcecommunityafrica/",
     title: "facebook"
+  },
+  {
+    href: "https://www.facebook.com/opensourcecommunityafrica/",
+    title: "youtube"
   }
 ];
 
