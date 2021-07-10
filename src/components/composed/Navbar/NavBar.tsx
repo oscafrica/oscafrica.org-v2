@@ -38,7 +38,7 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
         ifLightTune ? "bg-transparent" : "bg-neutral-100"
       )}
       style={{
-        zIndex:100
+        zIndex: 100
       }}
     >
       <Logo type="svg" tune={tune} />
@@ -61,6 +61,19 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
           ))}
           <li className="ml-12">
             <a
+              href="https://docs.oscafrica.org/about/community-code-of-conduct"
+              target="_blank"
+              rel="noreferrer noopenner"
+              className={classNames(
+                "text-captions hover:text-primary border-b border-transparent hover:border-primary font-medium tracking-widest uppercase",
+                ifLightTune ? " text-white" : " text-black"
+              )}
+            >
+              Code of Conduct
+            </a>
+          </li>
+          <li className="ml-12">
+            <a
               href="https://blog.oscafrica.org/"
               target="_blank"
               rel="noreferrer noopenner"
@@ -70,6 +83,19 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
               )}
             >
               Blog
+            </a>
+          </li>
+          <li className="ml-12">
+            <a
+              href="https://blog.oscafrica.org/newsletter"
+              target="_blank"
+              rel="noreferrer noopenner"
+              className={classNames(
+                "text-captions hover:text-primary border-b border-transparent hover:border-primary font-medium tracking-widest uppercase",
+                ifLightTune ? " text-white" : " text-black"
+              )}
+            >
+              Newsletter
             </a>
           </li>
         </ul>
