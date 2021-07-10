@@ -16,7 +16,7 @@ interface ISocialLink {
 const footerLinks: IFooterLink[] = [
   {
     title: "JOIN US",
-    href: "https://discord.gg/8STPZzN"
+    href: "https://discord.gg/pRJgjH9SwR"
   },
   {
     title: "DONATE",
@@ -38,7 +38,7 @@ const footerLinks: IFooterLink[] = [
 
 const socialLinks: ISocialLink[] = [
   {
-    href: "https://discord.gg/8STPZzN",
+    href: "https://discord.gg/pRJgjH9SwR",
     title: "discord"
   },
   {
