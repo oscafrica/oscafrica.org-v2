@@ -1,2 +1,4 @@
 User-agent: *
+Allow: /
+Host: https://oscafrica.org
 Sitemap: https://oscafrica.org/sitemap.xml
