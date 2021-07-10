@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import Link from "next/link";
 import styled from "styled-components";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
