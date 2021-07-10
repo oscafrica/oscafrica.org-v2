@@ -71,7 +71,7 @@ const CommunityPage = () => {
                 <br />
                 <br />
                 It typically consists of a group of people coming together to organize and facilitate meetups, creating
-                an environment of support in possible areas of challenge while following the O.S.C.A Code of Conduct.
+                an environment of support in possible areas of challenge while following the OSCA Code of Conduct.
                 <br />
                 <br />
                 <Link href="/about-us">
