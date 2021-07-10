@@ -37,7 +37,7 @@ const AboutUsPage = () => {
     <>
       <SEOHead
         title="About Us"
-        description=" Open Source Community Africa (O.S.C.A) is for open source lovers, enthusiasts, advocates and experts within and across Africa with the sole aim of increasing the rate of credible contributions by African software developers, designers, writers and everyone involved in the sphere of technology to open source projects both locally and globally, changing the perception of Africans from just the billion users to the NEXT BILLION CREATORS."
+        description=" Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts within and across Africa with the sole aim of increasing the rate of credible contributions by African software developers, designers, writers and everyone involved in the sphere of technology to open source projects both locally and globally, changing the perception of Africans from just the billion users to the NEXT BILLION CREATORS."
         ogImage={ABOUT_IMAGES.banner.src}
       />
       <Layout>
@@ -63,7 +63,7 @@ const AboutUsPage = () => {
             <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
               <SectionTitle fontSize="32">Who we are</SectionTitle>
               <p className="pt-12">
-                Open Source Community Africa (O.S.C.A) is for open source lovers, enthusiasts, advocates and experts
+                Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts
                 within and across Africa with the sole aim of increasing the rate of credible contributions by African
                 software developers, designers, writers and everyone involved in the sphere of technology to open source
                 projects both locally and globally, changing the perception of Africans from just the billion users to

@@ -71,14 +71,25 @@ const CommunityPage = () => {
                 <br />
                 <br />
                 It typically consists of a group of people coming together to organize and facilitate meetups, creating
-                an environment of support in possible areas of challenge while following the O.S.C.A Code of Conduct.
+                an environment of support in possible areas of challenge while following the{" "}
+                <a
+                  href="https://docs.oscafrica.org/about/community-code-of-conduct"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  OSCA Code of Conduct
+                </a>
+                .
                 <br />
                 <br />
-                <Link href="/about-us">
-                  <a className="bg-white inline-flex items-center font-medium hover:bg-primary hover:text-black text-primary rounded-primary duration-200 transition-all py-4 px-8">
-                    Host an event
-                  </a>
-                </Link>
+                <a
+                  className="bg-white inline-flex items-center font-medium hover:bg-primary hover:text-black text-primary rounded-primary duration-200 transition-all py-4 px-8"
+                  href="https://bit.ly/osca-leads-application"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lead a Chapter
+                </a>
               </p>
             </div>
           </article>
