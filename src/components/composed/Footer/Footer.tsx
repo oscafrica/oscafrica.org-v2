@@ -27,8 +27,8 @@ const footerLinks: IFooterLink[] = [
     href: "https://docs.oscafrica.org/"
   },
   {
-    title: "HOST AN EVENT",
-    href: "https://opencollective.com/osca/contribute"
+    title: "LEAD A CHAPTER",
+    href: "https://bit.ly/osca-leads-application"
   },
   {
     title: "CONTACT US",
