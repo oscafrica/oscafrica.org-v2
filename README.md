@@ -1,6 +1,6 @@
 <div align="center"  style="margin-bottom:30px">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
   <img src="public/images/seo/shareImage.jpeg" alt="OSCA banner" width='auto' height='auto'/>
 </div>
@@ -77,6 +77,7 @@ We use the [commitizen command line utility](https://github.com/commitizen/cz-cl
   <tr>
     <td align="center"><a href="https://github.com/alabobriggs"><img src="https://avatars.githubusercontent.com/u/38571291?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alabo David Briggs</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=alabobriggs" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Princesso"><img src="https://avatars.githubusercontent.com/u/13929923?v=4?s=100" width="100px;" alt=""/><br /><sub><b> Princess Oluebube Egbuna</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=Princesso" title="Code">💻</a></td>
+    <td align="center"><a href="https://bolajiayodeji.com"><img src="https://avatars.githubusercontent.com/u/30334776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bolaji Ayodeji</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=BolajiAyodeji" title="Code">💻</a> <a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=BolajiAyodeji" title="Documentation">📖</a></td>
   </tr>
 </table>
 
