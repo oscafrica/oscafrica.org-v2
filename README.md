@@ -1,4 +1,7 @@
 <div align="center"  style="margin-bottom:30px">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
   <img src="public/images/seo/shareImage.jpeg" alt="OSCA banner" width='auto' height='auto'/>
 </div>
 
@@ -67,6 +70,19 @@ We use the [commitizen command line utility](https://github.com/commitizen/cz-cl
 ## Contributors
 
 ### Financial Contributors
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/alabobriggs"><img src="https://avatars.githubusercontent.com/u/38571291?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alabo David Briggs</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=alabobriggs" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/osca/contribute)]
 
