@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "alabobriggs",
+      "name": "Alabo David Briggs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38571291?v=4",
+      "profile": "https://github.com/alabobriggs",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "oscafrica.org-v2",
+  "projectOwner": "oscafrica",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
