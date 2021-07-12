@@ -1,13 +1,10 @@
-<div align="center"  style="margin-bottom:30px">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-  <img src="public/images/seo/shareImage.jpeg" alt="OSCA banner" width='auto' height='auto'/>
+<div align="center" style="margin-bottom:30px">
+  <img src="https://github.com/oscafrica/oscafrica.org-v2/blob/main/public/images/seo/shareimage.jpeg?raw=true" alt="OSCA banner" width='auto' height='auto' />
 </div>
 
 <div align="center">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fb9e6562-f505-4c27-8e35-3494985b612e/deploy-status)](https://app.netlify.com/sites/osca/deploys) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Financial Contributors on Open Collective](https://opencollective.com/osca/all/badge.svg?label=financial+contributors)](https://opencollective.com/osca) [![OpenCollective](https://opencollective.com/osca/backers/badge.svg)](#backers) [![OpenCollective](https://opencollective.com/osca/sponsors/badge.svg)](#sponsors)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb9e6562-f505-4c27-8e35-3494985b612e/deploy-status)](https://app.netlify.com/sites/osca/deploys) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![Financial Contributors on Open Collective](https://opencollective.com/osca/all/badge.svg?label=financial+contributors)](https://opencollective.com/osca) [![OpenCollective](https://opencollective.com/osca/backers/badge.svg)](#backers) [![OpenCollective](https://opencollective.com/osca/sponsors/badge.svg)](#sponsors)
 
 </div>
 
@@ -69,7 +66,6 @@ We use the [commitizen command line utility](https://github.com/commitizen/cz-cl
 
 ## Contributors
 
-### Financial Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -85,6 +81,8 @@ We use the [commitizen command line utility](https://github.com/commitizen/cz-cl
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+### Financial Contributors
 
 Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/osca/contribute)]
 
