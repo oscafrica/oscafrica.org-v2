@@ -1,1 +1,1 @@
-export type SocialLink = "facebook" | "discord" | "twitter" | "github" | "instagram" | 'youtube';
+export type SocialLink = "facebook" | "discord" | "twitter" | "github" | "instagram" | 'youtube' | 'linkedin';

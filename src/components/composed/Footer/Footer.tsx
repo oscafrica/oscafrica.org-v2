@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../atoms/Logo/Logo";
 import { SocialLink } from "../../../types";
 import SocialMediaIcon from "../../atoms/SocialMediaIcon/SocialMediaIcon";
+import styled from "styled-components";
 
 interface IFooterLink {
   href: string;
@@ -33,6 +34,10 @@ const footerLinks: IFooterLink[] = [
   {
     title: "CONTACT US",
     href: "mailto:info@oscafrica.org"
+  },
+  {
+    title: "Code of conduct",
+    href: "https://docs.oscafrica.org/about/community-code-of-conduct"
   }
 ];
 
@@ -50,6 +55,10 @@ const socialLinks: ISocialLink[] = [
     title: "github"
   },
   {
+    href: "https://linkedin.com/company/oscafrica",
+    title: "linkedin"
+  },
+  {
     href: "https://www.instagram.com/oscafrica/",
     title: "instagram"
   },
@@ -65,19 +74,19 @@ const socialLinks: ISocialLink[] = [
 
 const Footer = () => {
   return (
-    <header className="bg-secondary px-10 lg:px-32 pt-44 pb-16">
-      <div className="flex flex-col lg:flex-row items-center lg:justify-between">
-        <Logo type="svg" tune="dark" />
+    <header className="bg-secondary px-10 lg:px-32 pt-24 pb-16">
+      <div className="flex flex-col md:flex-row w-full flex-wrap justify-between items-center">
+        <Logo type="svg" tune="dark" className="mr-12"/>
 
-        <nav className="lg:flex-grow py-20 lg:py-0">
-          <ul className="flex flex-col lg:flex-row lg:items-center">
+        <nav className="lg:flex-grow mt-16 mb-4 md:mt-0 md:mb-0 w-full lg:w-auto order-1 lg:order-1 md:order-2">
+          <ul className="flex flex-col flex-wrap md:mt-20 lg:mt-0 md:flex-row lg:flex-row lg:items-center">
             {footerLinks.map(({ title, href }) => (
-              <li className="lg:ml-12 pb-12 text-center lg:text-left lg:pb-0" key={title}>
+              <li className="md:mr-12 pb-12 text-center lg:text-left lg:pb-0" key={title}>
                 <a
                   href={href}
                   target="_blank"
                   rel="noreferrer noopenner"
-                  className="text-captions hover:text-primary border-transparent border-b hover:border-primary font-medium tracking-widest text-white"
+                  className="text-captions uppercase hover:text-primary border-transparent border-b hover:border-primary font-medium tracking-widest text-white"
                 >
                   {title}
                 </a>
@@ -86,21 +95,33 @@ const Footer = () => {
           </ul>
         </nav>
 
-        <ul className="flex items-center w-full lg:w-auto justify-between">
-          {socialLinks.map(({ title, href }) => (
-            <li className="lg:ml-12" key={title}>
-              <SocialMediaIcon
-                href={href}
-                social={title}
-              />
-            </li>
-          ))}
-        </ul>
+        <StyledNewsLetterLink
+          href="https://blog.oscafrica.org/newsletter"
+          target="_blank"
+          rel="noreferrer noopenner"
+          className="bg-primary order-2 lg:order-2 md:order-1"
+        >
+          Subscribe to Newsletter
+        </StyledNewsLetterLink>
       </div>
 
-      <p className="w-full pt-20 text-white opacity-25 text-base">Copyright &copy; Open Source Community Africa 2020</p>
+      <ul className="flex flex-wrap md:flex-nowrap w-full justify-center md:justify-start items-center mt-16 ">
+        {socialLinks.map(({ title, href }) => (
+          <li className=" ml-6 mr-6 mb-12 md:mb-0 md:mr-12 md:ml-0 lg:mr-12" key={title}>
+            <SocialMediaIcon href={href} social={title} />
+          </li>
+        ))}
+      </ul>
+
+      <p className="w-full mt-8 md:mt-12 text-center md:text-left text-black font-bold opacity-80 text-base">Copyright &copy; Open Source Community Africa 2021</p>
     </header>
   );
 };
+
+const StyledNewsLetterLink = styled.a`
+  padding: 14px 24px;
+  background-color: #f2994a;
+  font-weight: 700;
+`;
 
 export default Footer;

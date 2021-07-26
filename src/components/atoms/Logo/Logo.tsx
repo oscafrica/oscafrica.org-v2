@@ -4,12 +4,13 @@ import Link from "next/link";
 interface LogoProps {
   tune: "dark" | "light";
   type: "svg" | "png";
+  className?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ tune, type }) => {
+const Logo: React.FC<LogoProps> = ({ tune, type, className }) => {
   return (
     <Link href="/" passHref>
-      <a>
+      <a className={className}>
         <img alt="OSCA logo" src={`/images/logo/${tune}/osca.${type}`} />
       </a>
     </Link>
