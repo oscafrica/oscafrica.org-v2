@@ -75,13 +75,13 @@ const socialLinks: ISocialLink[] = [
 const Footer = () => {
   return (
     <header className="bg-secondary px-10 lg:px-32 pt-24 pb-16">
-      <div className="flex w-full justify-between items-center">
-        <Logo type="svg" tune="dark" />
+      <div className="flex flex-col md:flex-row w-full flex-wrap justify-between items-center">
+        <Logo type="svg" tune="dark" className="mr-12"/>
 
-        <nav className="lg:flex-grow">
-          <ul className="flex flex-col lg:flex-row lg:items-center">
+        <nav className="lg:flex-grow mt-16 mb-4 md:mt-0 md:mb-0 w-full lg:w-auto order-1 lg:order-1 md:order-2">
+          <ul className="flex flex-col flex-wrap md:mt-20 lg:mt-0 md:flex-row lg:flex-row lg:items-center">
             {footerLinks.map(({ title, href }) => (
-              <li className="lg:ml-12 pb-12 text-center lg:text-left lg:pb-0" key={title}>
+              <li className="md:mr-12 pb-12 text-center lg:text-left lg:pb-0" key={title}>
                 <a
                   href={href}
                   target="_blank"
@@ -99,21 +99,21 @@ const Footer = () => {
           href="https://blog.oscafrica.org/newsletter"
           target="_blank"
           rel="noreferrer noopenner"
-          className="bg-primary"
+          className="bg-primary order-2 lg:order-2 md:order-1"
         >
           Subscribe to Newsletter
         </StyledNewsLetterLink>
       </div>
 
-      <ul className="flex items-center mt-16 ">
+      <ul className="flex flex-wrap md:flex-nowrap w-full justify-center md:justify-start items-center mt-16 ">
         {socialLinks.map(({ title, href }) => (
-          <li className="lg:mr-12" key={title}>
+          <li className=" ml-6 mr-6 mb-12 md:mb-0 md:mr-12 md:ml-0 lg:mr-12" key={title}>
             <SocialMediaIcon href={href} social={title} />
           </li>
         ))}
       </ul>
 
-      <p className="w-full mt-12 text-white opacity-25 text-base">Copyright &copy; Open Source Community Africa 2021</p>
+      <p className="w-full mt-8 md:mt-12 text-center md:text-left text-black font-bold opacity-80 text-base">Copyright &copy; Open Source Community Africa 2021</p>
     </header>
   );
 };
