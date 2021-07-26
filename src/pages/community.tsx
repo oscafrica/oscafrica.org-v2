@@ -20,6 +20,11 @@ const StyledMainSection = styled.main`
 
 const StyledFigure = styled.figure`
   height: 725px;
+
+  @media screen and (max-width: 800px) {
+    min-height: auto;
+    height: auto;
+  }
 `;
 
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {

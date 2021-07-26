@@ -22,6 +22,11 @@ const StyledMainSection = styled.main`
 const StyledFigure = styled.figure`
   min-height: 725px;
   height: 725px;
+
+  @media screen and (max-width: 800px) {
+    min-height: auto;
+    height: auto;
+  }
 `;
 
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {
@@ -63,11 +68,10 @@ const AboutUsPage = () => {
             <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
               <SectionTitle fontSize="32">Who we are</SectionTitle>
               <p className="pt-12">
-                Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts
-                within and across Africa with the sole aim of increasing the rate of credible contributions by African
-                software developers, designers, writers and everyone involved in the sphere of technology to open source
-                projects both locally and globally, changing the perception of Africans from just the billion users to
-                the
+                Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts within
+                and across Africa with the sole aim of increasing the rate of credible contributions by African software
+                developers, designers, writers and everyone involved in the sphere of technology to open source projects
+                both locally and globally, changing the perception of Africans from just the billion users to the
                 <br />
                 <br />
                 <b>NEXT BILLION CREATORS.</b>
@@ -125,7 +129,7 @@ const AboutUsPage = () => {
           </article>
         </section>
         <article className="lg:flex w-screen lg:mt-64 lg:-mx-32">
-          <img src={ABOUT_IMAGES.bg1.src} alt={ABOUT_IMAGES.bg1.alt} className="lg:w-1/2 h-full" />
+          <img src={ABOUT_IMAGES.bg1.src} alt={ABOUT_IMAGES.bg1.alt} className="lg:w-1/2 h-auto lg:h-full" />
 
           <div className="min-h-full flex flex-col items-start justify-center px-10 lg:px-24 py-20 w-full lg:w-1/2 bg-blue-theme">
             <SectionTitle fontSize="32" color="white">
