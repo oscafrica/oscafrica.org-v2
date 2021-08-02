@@ -24,7 +24,7 @@ const MyApp = (props: any) => {
 
   useEffect(() => {
     if (!window.GA_INITIALIZED) {
-      console.log("Iam", process.env.GOOGLE_ANALYTICS);
+      console.log("Iam", "UA-77563678-4");
       initGA();
       window.GA_INITIALIZED = true;
     }
