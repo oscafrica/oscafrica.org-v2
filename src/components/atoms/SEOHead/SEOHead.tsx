@@ -61,7 +61,7 @@ SEOHead.defaultProps = {
   title: "",
   description: "A community of creative minds driving the Open Source movement in Africa.",
   url: "https://oscafrica.org",
-  ogImage: "https://oscafrica.org/images/seo/shareimage.jpeg"
+  ogImage: "https://oscafrica.org/images/seo/og-image.png"
 };
 
 export default SEOHead;
