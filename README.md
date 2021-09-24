@@ -1,5 +1,5 @@
 <div align="center" style="margin-bottom:30px">
-  <img src="https://github.com/oscafrica/oscafrica.org-v2/blob/main/public/images/seo/shareimage.jpeg?raw=true" alt="OSCA banner" width='auto' height='auto' />
+  <img src="https://github.com/oscafrica/oscafrica.org-v2/blob/main/public/images/seo/og-image.png?raw=true" alt="OSCA banner" width='auto' height='auto' />
 </div>
 
 <div align="center">
