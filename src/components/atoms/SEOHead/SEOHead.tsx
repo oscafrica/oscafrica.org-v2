@@ -60,8 +60,8 @@ const SEOHead: React.FC<SEOHeadProps> = ({ title, description, url, ogImage }) =
 SEOHead.defaultProps = {
   title: "",
   description: "A community of creative minds driving the Open Source movement in Africa.",
-  url: "https://oscafrica.com",
-  ogImage: "https://oscafrica.vercel.app/images/seo/shareimage.jpeg"
+  url: "https://oscafrica.org",
+  ogImage: "https://oscafrica.org/images/seo/og-image.png"
 };
 
 export default SEOHead;
