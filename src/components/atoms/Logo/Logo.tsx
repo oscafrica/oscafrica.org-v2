@@ -17,6 +17,10 @@ const Logo: React.FC<LogoProps> = ({ tune, type, className }) => {
   );
 };
 
+Logo.defaultProps = {
+  className: ""
+};
+
 export type { LogoProps };
 
 export default Logo;

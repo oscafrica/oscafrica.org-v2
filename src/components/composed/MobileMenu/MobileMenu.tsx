@@ -123,4 +123,8 @@ const Container = styled.header`
   z-index: 100000;
 `;
 
+MobileMenu.defaultProps = {
+  tune: "dark"
+};
+
 export default MobileMenu;

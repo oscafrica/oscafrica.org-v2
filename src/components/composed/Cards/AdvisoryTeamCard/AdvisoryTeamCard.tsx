@@ -4,18 +4,8 @@ import styled from "styled-components";
 import { IAdvisoryMember } from "../../../../interfaces/IAdvisoryMember.interface";
 
 export interface AdvisoryTeamCardProps extends IAdvisoryMember {
-  className?: string;
+  className: string;
 }
-
-const CardImage = styled.figure`
-  --height: 357px;
-
-  height: var(--height);
-
-  & > img {
-    height: var(--height);
-  }
-`;
 
 const AdvisoryTeamCard = ({ image, name, className }: AdvisoryTeamCardProps) => {
   return (
@@ -34,5 +24,15 @@ const AdvisoryTeamCard = ({ image, name, className }: AdvisoryTeamCardProps) => 
     </article>
   );
 };
+
+const CardImage = styled.figure`
+  --height: 357px;
+
+  height: var(--height);
+
+  & > img {
+    height: var(--height);
+  }
+`;
 
 export default AdvisoryTeamCard;

@@ -36,6 +36,10 @@ const StyledLink = styled.a`
   }
 `;
 
+ArrowLink.defaultProps = {
+  colored: false
+};
+
 export type { ArrowLinkProps };
 
 export default ArrowLink;

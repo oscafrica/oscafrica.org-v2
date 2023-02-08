@@ -15,19 +15,6 @@ interface ImageBackgroundProps {
   alt: string;
 }
 
-const StyledMainSection = styled.main`
-  height: 677px;
-`;
-
-const StyledFigure = styled.figure`
-  height: 725px;
-
-  @media screen and (max-width: 800px) {
-    min-height: auto;
-    height: auto;
-  }
-`;
-
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {
   return (
     <StyledFigure className={classNames("relative w-full bg-neutral-200", className)}>
@@ -132,6 +119,23 @@ const CommunityPage = () => {
       </Layout>
     </>
   );
+};
+
+const StyledMainSection = styled.main`
+  height: 677px;
+`;
+
+const StyledFigure = styled.figure`
+  height: 725px;
+
+  @media screen and (max-width: 800px) {
+    min-height: auto;
+    height: auto;
+  }
+`;
+
+ImageBackground.defaultProps = {
+  className: ""
 };
 
 export default CommunityPage;

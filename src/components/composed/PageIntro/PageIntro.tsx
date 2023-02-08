@@ -19,6 +19,11 @@ const PageIntro: React.FC<PageIntroProps> = ({ heading, subHeading, className, f
   );
 };
 
+PageIntro.defaultProps = {
+  fontSize: "40",
+  className: ""
+};
+
 export type { PageIntroProps };
 
 export default PageIntro;

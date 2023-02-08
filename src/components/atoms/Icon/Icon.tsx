@@ -6,7 +6,6 @@ type IconType = "twitter" | "close";
 interface IconProps {
   icon: IconType;
   width: number;
-  className?: string;
 }
 
 interface PodcastProps {

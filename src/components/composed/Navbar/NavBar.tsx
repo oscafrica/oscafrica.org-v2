@@ -80,6 +80,10 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
   );
 };
 
+NavBar.defaultProps = {
+  tune: "dark"
+};
+
 export type { NavbarProps };
 
 export default NavBar;

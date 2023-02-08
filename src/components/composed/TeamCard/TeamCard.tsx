@@ -9,12 +9,6 @@ export interface TeamCardProps {
   className?: string;
 }
 
-const TeamCardWrapper = styled.article`
-  .team-image {
-    height: 613px;
-  }
-`;
-
 const TeamCard = ({ image, name, className }: TeamCardProps) => {
   return (
     <TeamCardWrapper className={classNames("flex flex-col justify-center w-1/3", className)}>
@@ -29,6 +23,16 @@ const TeamCard = ({ image, name, className }: TeamCardProps) => {
       </div>
     </TeamCardWrapper>
   );
+};
+
+const TeamCardWrapper = styled.article`
+  .team-image {
+    height: 613px;
+  }
+`;
+
+TeamCard.defaultProps = {
+  className: ""
 };
 
 export default TeamCard;

@@ -38,16 +38,6 @@ const CORE_MEMBERS: IMember[] = [
   }
 ];
 
-const SeeAllMembersCardContainer = styled.article`
-  & > div {
-    height: 613px;
-  }
-`;
-
-const StyledMainSection = styled.main`
-  height: 677px;
-`;
-
 const CommunityPage = () => {
   return (
     <>
@@ -95,5 +85,15 @@ const CommunityPage = () => {
     </>
   );
 };
+
+const SeeAllMembersCardContainer = styled.article`
+  & > div {
+    height: 613px;
+  }
+`;
+
+const StyledMainSection = styled.main`
+  height: 677px;
+`;
 
 export default CommunityPage;
