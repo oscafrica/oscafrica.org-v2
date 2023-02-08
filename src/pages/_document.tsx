@@ -1,3 +1,4 @@
+import React from "react";
 import { NextPage } from "next";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";

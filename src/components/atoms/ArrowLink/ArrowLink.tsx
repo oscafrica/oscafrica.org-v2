@@ -1,6 +1,6 @@
+import React from "react";
 import Link from "next/link";
 import classNames from "classnames";
-import React from "react";
 import styled from "styled-components";
 
 interface ArrowLinkProps {

@@ -48,14 +48,14 @@ const NavBar: React.FC<NavbarProps> = ({ tune = "dark" }) => {
           {navLinks.map(({ title, href }) => (
             <li className="ml-12" key={title}>
               <Link href={href}>
-                <a
+                <button
                   className={classNames(
                     "text-captions hover:text-primary border-b border-transparent hover:border-primary font-medium tracking-widest",
                     ifLightTune ? " text-white" : " text-black"
                   )}
                 >
                   {title}
-                </a>
+                </button>
               </Link>
             </li>
           ))}

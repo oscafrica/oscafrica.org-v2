@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import ArrowLink from "../components/atoms/ArrowLink/ArrowLink";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
@@ -31,9 +32,9 @@ const IndexPage = () => {
                   A community of creative minds driving the Open Source movement in Africa.
                 </p>
                 <Link href="/about-us" passHref>
-                  <a className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
+                  <button className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
                     Who we are
-                  </a>
+                  </button>
                 </Link>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import React from "react";
 // import { useState } from "react";
 import MapChart from "../MapChart/MapChart";
 // import ReactTooltip from "react-tooltip";

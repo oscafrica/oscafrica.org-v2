@@ -10,9 +10,9 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ tune, type, className }) => {
   return (
     <Link href="/" passHref>
-      <a className={className}>
+      <button className={className}>
         <img alt="OSCA logo" src={`/images/logo/${tune}/osca.${type}`} />
-      </a>
+      </button>
     </Link>
   );
 };

@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import ArrowLink from "../components/atoms/ArrowLink/ArrowLink";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";

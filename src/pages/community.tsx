@@ -1,3 +1,4 @@
+import React from "react";
 import classNames from "classnames";
 import styled from "styled-components";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
@@ -105,6 +106,7 @@ const CommunityPage = () => {
             <div className="overflow-hidden mt-12">
               <div className="-mt-20">
                 <iframe
+                  title="Map of OSCA Community Chapters"
                   src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
                   width="100%"
                   height="780"

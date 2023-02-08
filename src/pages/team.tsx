@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import Layout from "../components/composed/Layout/Layout";
