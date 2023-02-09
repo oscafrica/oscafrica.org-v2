@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import ArrowLink from "../components/atoms/ArrowLink/ArrowLink";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
@@ -11,23 +12,9 @@ const { about: ABOUT_IMAGES } = APP_IMAGES.pages;
 
 interface ImageBackgroundProps {
   src: string;
-  className?: string;
+  className: string;
   alt: string;
 }
-
-const StyledMainSection = styled.main`
-  height: 677px;
-`;
-
-const StyledFigure = styled.figure`
-  min-height: 725px;
-  height: 725px;
-
-  @media screen and (max-width: 800px) {
-    min-height: auto;
-    height: auto;
-  }
-`;
 
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {
   return (
@@ -151,5 +138,19 @@ const AboutUsPage = () => {
     </>
   );
 };
+
+const StyledMainSection = styled.main`
+  height: 677px;
+`;
+
+const StyledFigure = styled.figure`
+  min-height: 725px;
+  height: 725px;
+
+  @media screen and (max-width: 800px) {
+    min-height: auto;
+    height: auto;
+  }
+`;
 
 export default AboutUsPage;

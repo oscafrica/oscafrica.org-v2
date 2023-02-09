@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-type Icon = "twitter" | 'close';
+type IconType = "twitter" | "close";
 
 interface IconProps {
-  icon: Icon;
+  icon: IconType;
   width: number;
-  className?: string;
 }
 
 interface PodcastProps {

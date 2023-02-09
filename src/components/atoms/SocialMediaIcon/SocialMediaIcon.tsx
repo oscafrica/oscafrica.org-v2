@@ -15,6 +15,10 @@ const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ social, href, classNa
   );
 };
 
+SocialMediaIcon.defaultProps = {
+  className: ""
+};
+
 export type { SocialMediaIconProps };
 
 export default SocialMediaIcon;

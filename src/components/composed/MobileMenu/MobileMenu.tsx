@@ -74,7 +74,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ tune }) => {
           {navLinks.map(({ title, href }) => (
             <li className="" key={title}>
               <Link href={href}>
-                <a className="text-captions uppercase font-medium tracking-widest">{title}</a>
+                <button className="text-captions uppercase font-medium tracking-widest">{title}</button>
               </Link>
             </li>
           ))}
@@ -122,5 +122,9 @@ const HiddenDropDown = styled.nav`
 const Container = styled.header`
   z-index: 100000;
 `;
+
+MobileMenu.defaultProps = {
+  tune: "dark"
+};
 
 export default MobileMenu;

@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/atoms/Typography/Headings/SectionTitle/SectionTitle";
 import Layout from "../components/composed/Layout/Layout";
@@ -36,16 +37,6 @@ const CORE_MEMBERS: IMember[] = [
     image: TEAM_IMAGES.core.yoma.src
   }
 ];
-
-const SeeAllMembersCardContainer = styled.article`
-  & > div {
-    height: 613px;
-  }
-`;
-
-const StyledMainSection = styled.main`
-  height: 677px;
-`;
 
 const CommunityPage = () => {
   return (
@@ -94,5 +85,15 @@ const CommunityPage = () => {
     </>
   );
 };
+
+const SeeAllMembersCardContainer = styled.article`
+  & > div {
+    height: 613px;
+  }
+`;
+
+const StyledMainSection = styled.main`
+  height: 677px;
+`;
 
 export default CommunityPage;

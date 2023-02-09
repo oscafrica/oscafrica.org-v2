@@ -11,22 +11,6 @@ export interface EventCardProps {
   className?: string;
 }
 
-const EventCardWrapper = styled.article`
-  --card-width: 411px;
-
-  min-width: var(--card-width);
-  max-width: var(--card-width);
-
-  .event-image {
-    width: var(--card-width);
-    height: var(--card-width);
-  }
-
-  .event-region {
-    margin-top: -25%;
-  }
-`;
-
 const EventCard = ({ image, name, region, url, className }: EventCardProps) => {
   return (
     <EventCardWrapper className={classNames("flex flex-col justify-center", className)}>
@@ -46,6 +30,26 @@ const EventCard = ({ image, name, region, url, className }: EventCardProps) => {
       </div>
     </EventCardWrapper>
   );
+};
+
+const EventCardWrapper = styled.article`
+  --card-width: 411px;
+
+  min-width: var(--card-width);
+  max-width: var(--card-width);
+
+  .event-image {
+    width: var(--card-width);
+    height: var(--card-width);
+  }
+
+  .event-region {
+    margin-top: -25%;
+  }
+`;
+
+EventCard.defaultProps = {
+  className: ""
 };
 
 export default EventCard;

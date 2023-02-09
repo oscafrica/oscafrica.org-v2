@@ -1,6 +1,6 @@
+import React from "react";
 import Link from "next/link";
 import classNames from "classnames";
-import React from "react";
 import styled from "styled-components";
 
 interface ArrowLinkProps {
@@ -35,6 +35,10 @@ const StyledLink = styled.a`
     }
   }
 `;
+
+ArrowLink.defaultProps = {
+  colored: false
+};
 
 export type { ArrowLinkProps };
 

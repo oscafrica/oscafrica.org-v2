@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 interface ButtonProps {
   type: "submit" | "reset" | "button";
-  size?: "default" | "small";
+  size: "default" | "small";
   name: string;
   onClick?: () => void;
   className?: string;
@@ -15,7 +15,7 @@ const buttonSize = {
   small: "py-4 px-7"
 };
 
-const Button: React.FC<ButtonProps> = ({ size = "default", className, children, type, onClick, disabled }) => {
+const Button: React.FC<ButtonProps> = ({ size, className, children, type, onClick, disabled }) => {
   return (
     <button
       onClick={onClick}
@@ -30,6 +30,12 @@ const Button: React.FC<ButtonProps> = ({ size = "default", className, children, 
       {children}
     </button>
   );
+};
+
+Button.defaultProps = {
+  onClick: () => {},
+  className: "",
+  disabled: false
 };
 
 export type { ButtonProps };

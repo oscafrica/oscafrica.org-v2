@@ -1,3 +1,4 @@
+import React from "react";
 import classNames from "classnames";
 import styled from "styled-components";
 import SEOHead from "../components/atoms/SEOHead/SEOHead";
@@ -13,19 +14,6 @@ interface ImageBackgroundProps {
   className?: string;
   alt: string;
 }
-
-const StyledMainSection = styled.main`
-  height: 677px;
-`;
-
-const StyledFigure = styled.figure`
-  height: 725px;
-
-  @media screen and (max-width: 800px) {
-    min-height: auto;
-    height: auto;
-  }
-`;
 
 const ImageBackground: React.FC<ImageBackgroundProps> = ({ className, src, alt }) => {
   return (
@@ -105,6 +93,7 @@ const CommunityPage = () => {
             <div className="overflow-hidden mt-12">
               <div className="-mt-20">
                 <iframe
+                  title="Map of OSCA Community Chapters"
                   src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
                   width="100%"
                   height="780"
@@ -130,6 +119,23 @@ const CommunityPage = () => {
       </Layout>
     </>
   );
+};
+
+const StyledMainSection = styled.main`
+  height: 677px;
+`;
+
+const StyledFigure = styled.figure`
+  height: 725px;
+
+  @media screen and (max-width: 800px) {
+    min-height: auto;
+    height: auto;
+  }
+`;
+
+ImageBackground.defaultProps = {
+  className: ""
 };
 
 export default CommunityPage;
