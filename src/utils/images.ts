@@ -59,23 +59,23 @@ export const APP_IMAGES = {
       },
       core: {
         bolaji: {
-          alt: "bolaji",
-          src: `${domain}/backgrounds/team/core/smub0l63xrk5ued20qgw`
+          alt: "Bolaji's Image",
+          src: `${domain}/backgrounds/team/core/ztbrhkngfv4l39bxrbrj`
         },
         yoma: {
-          alt: "Yoma",
+          alt: "Yoma's Image",
           src: `${domain}/backgrounds/team/core/gu9ph2rjfpkar7oxk8nd`
         },
         ada: {
-          alt: "Ada",
+          alt: "Ada's Image",
           src: `${domain}/backgrounds/team/core/t919zt4tggu4oefbcpyl`
         },
         perrie: {
-          alt: "Perrie",
-          src: `${domain}/backgrounds/team/core/ez6pqfxnirgzkjc0oswu`
+          alt: "Perrie's Image",
+          src: `${domain}/backgrounds/team/core/tj2h0uuzg6oxvipvh6zf`
         },
         samson: {
-          alt: "Samson",
+          alt: "Samson's Image",
           src: `${domain}/backgrounds/team/core/eeslqiebou7mgtarjmqv`
         }
       }
