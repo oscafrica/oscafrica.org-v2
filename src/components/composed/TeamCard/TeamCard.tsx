@@ -16,7 +16,7 @@ const TeamCard = ({ image, name, className }: TeamCardProps) => {
         <figure>
           <img className="team-image object-cover" src={image} alt={name} />
         </figure>
-        <div className=" flex w-3/4 py-12 px-8 items-center bg-white absolute left-0 bottom-0">
+        <div className="flex w-3/4 py-12 px-8 items-center bg-white absolute left-0 bottom-0">
           <p className="text-24 font-ubuntu font-bold mr-8">{name}</p>
             <img src="/images/icons/social/twitter-dark.svg" alt="Twitter Logo" />
         </div>

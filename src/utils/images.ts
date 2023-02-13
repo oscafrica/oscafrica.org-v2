@@ -28,6 +28,32 @@ export const APP_IMAGES = {
       bg3: {
         alt: "community background 3",
         src: `${domain}/backgrounds/community/zawue1wxjl6gmu4eu3he`
+      },
+      partners: {
+        sustain: {
+          alt: "Sustain OSS's Logo",
+          src: `${domain}/backgrounds/community/partners/hbjftozjl1ematzbohrz`
+        },
+        osc: {
+          alt: "Open Source Collective's Logo",
+          src: `${domain}/backgrounds/community/partners/tdb90467ss1fgi7xs6hb`
+        },
+        sca: {
+          alt: "She Code Africa's Logo",
+          src: `${domain}/backgrounds/community/partners/lfcsfiras1rfafv7i2xc`
+        },
+        talentql: {
+          alt: "TalentQL's Logo",
+          src: `${domain}/backgrounds/community/partners/czzahivjeio8yuba3jzo`
+        },
+        github: {
+          alt: "Github Africa's Logo",
+          src: `${domain}/backgrounds/community/partners/upnpotiggeeeggawytt7`
+        },
+        propel: {
+          alt: "Propel's Logo",
+          src: `${domain}/backgrounds/community/partners/igrk3gunc8jhbelyqwhp`
+        }
       }
     },
     about: {
