@@ -28,6 +28,32 @@ export const APP_IMAGES = {
       bg3: {
         alt: "community background 3",
         src: `${domain}/backgrounds/community/zawue1wxjl6gmu4eu3he`
+      },
+      partners: {
+        sustain: {
+          alt: "Sustain OSS's Logo",
+          src: `${domain}/backgrounds/community/partners/hbjftozjl1ematzbohrz`
+        },
+        osc: {
+          alt: "Open Source Collective's Logo",
+          src: `${domain}/backgrounds/community/partners/tdb90467ss1fgi7xs6hb`
+        },
+        sca: {
+          alt: "She Code Africa's Logo",
+          src: `${domain}/backgrounds/community/partners/lfcsfiras1rfafv7i2xc`
+        },
+        talentql: {
+          alt: "TalentQL's Logo",
+          src: `${domain}/backgrounds/community/partners/czzahivjeio8yuba3jzo`
+        },
+        github: {
+          alt: "Github Africa's Logo",
+          src: `${domain}/backgrounds/community/partners/upnpotiggeeeggawytt7`
+        },
+        propel: {
+          alt: "Propel's Logo",
+          src: `${domain}/backgrounds/community/partners/igrk3gunc8jhbelyqwhp`
+        }
       }
     },
     about: {
@@ -59,23 +85,23 @@ export const APP_IMAGES = {
       },
       core: {
         bolaji: {
-          alt: "bolaji",
-          src: `${domain}/backgrounds/team/core/smub0l63xrk5ued20qgw`
+          alt: "Bolaji's Image",
+          src: `${domain}/backgrounds/team/core/ztbrhkngfv4l39bxrbrj`
         },
         yoma: {
-          alt: "Yoma",
+          alt: "Yoma's Image",
           src: `${domain}/backgrounds/team/core/gu9ph2rjfpkar7oxk8nd`
         },
         ada: {
-          alt: "Ada",
+          alt: "Ada's Image",
           src: `${domain}/backgrounds/team/core/t919zt4tggu4oefbcpyl`
         },
         perrie: {
-          alt: "Perrie",
-          src: `${domain}/backgrounds/team/core/ez6pqfxnirgzkjc0oswu`
+          alt: "Perrie's Image",
+          src: `${domain}/backgrounds/team/core/tj2h0uuzg6oxvipvh6zf`
         },
         samson: {
-          alt: "Samson",
+          alt: "Samson's Image",
           src: `${domain}/backgrounds/team/core/eeslqiebou7mgtarjmqv`
         }
       }

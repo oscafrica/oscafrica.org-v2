@@ -9,6 +9,45 @@ import { APP_IMAGES } from "../utils/images";
 
 const { community: COMMUNITY_IMAGES } = APP_IMAGES.pages;
 
+const COMMUNITY_PARTNERS = [
+  {
+    name: "Sustain OSS",
+    image: COMMUNITY_IMAGES.partners.sustain.src,
+    alt: COMMUNITY_IMAGES.partners.sustain.alt,
+    link: "https://sustainoss.org?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+  },
+  {
+    name: "Open Source Collective",
+    image: COMMUNITY_IMAGES.partners.osc.src,
+    alt: COMMUNITY_IMAGES.partners.osc.alt,
+    link: "https://oscollective.org?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+  },
+  {
+    name: "She Code Africa",
+    image: COMMUNITY_IMAGES.partners.sca.src,
+    alt: COMMUNITY_IMAGES.partners.sca.alt,
+    link: "https://shecodeafrica.org?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+  },
+  {
+    name: "TalentQL",
+    image: COMMUNITY_IMAGES.partners.talentql.src,
+    alt: COMMUNITY_IMAGES.partners.talentql.alt,
+    link: "https://talentql.com?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+  },
+  {
+    name: "GitHub Africa",
+    image: COMMUNITY_IMAGES.partners.github.src,
+    alt: COMMUNITY_IMAGES.partners.github.alt,
+    link: "https://meetup.com/github-africa?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+  },
+  {
+    name: "Propel",
+    image: COMMUNITY_IMAGES.partners.propel.src,
+    alt: COMMUNITY_IMAGES.partners.propel.alt,
+    link: "https://withpropel.com?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+  }
+];
+
 interface ImageBackgroundProps {
   src: string;
   className?: string;
@@ -101,8 +140,40 @@ const CommunityPage = () => {
               </div>
             </div>
           </article>
+          <article className="mt-28">
+            <div className="px-10 lg:px-0">
+              <SectionTitle fontSize="32">Our Community Partners</SectionTitle>
+            </div>
+            <div className="mt-12 lg:mt-28 flex flex-wrap justify-center">
+              {COMMUNITY_PARTNERS.map((partner) => (
+                <a
+                  key={partner.name}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href={partner.link}
+                  className="relative lg:w-1/4 max-w-sm px-3 my-12"
+                >
+                  <img src={partner.image} alt={partner.alt} className="w-80 mx-auto" />
+                </a>
+              ))}
+            </div>
+            <section className="py-20 w-screen bg-opacity-10 lg:-mx-32 flex flex-col items-center">
+              <p className="font-lato text-gray-700 text-body text-center px-10 lg:px-0 lg:w-1/2 leading-10 mb-12">
+                Do you want to partner with us? We are always open to collaborating with communities or organizations
+                that belive in our mission and want to expand their initiatives to members of our community.
+              </p>
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="mailto:partnerships@oscafrica.org"
+                className=" text-primary duration-200 text-body py-4 px-7 rounded-lg hover:text-black hover:bg-primary leading-10"
+              >
+                Become a partner
+              </a>
+            </section>
+          </article>
         </section>
-        <section className="py-28 lg:mt-40 w-screen bg-primary bg-opacity-10 lg:-mx-32 flex flex-col items-center">
+        <section className="py-28 w-screen bg-primary bg-opacity-10 lg:-mx-32 flex flex-col items-center">
           <p className="font-lato text-gray-700 text-body text-center px-10 lg:px-0 lg:w-1/3 leading-10 mb-12">
             As a community, we intend to help integrate the art of open source contribution into African developer
             ecosystem whilst strongly advocating for the adoption of free and open source technologies.
