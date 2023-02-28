@@ -35,6 +35,11 @@ const CORE_MEMBERS: IMember[] = [
     twitter: "https://twitter.com/yomdroid",
     name: "Yoma Okobiah",
     image: TEAM_IMAGES.core.yoma.src
+  },
+  {
+    twitter: "https://twitter.com/PrincesOluebube",
+    name: "Princess Oluebube",
+    image: TEAM_IMAGES.core.princess.src
   }
 ];
 
