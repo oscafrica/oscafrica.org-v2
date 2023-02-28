@@ -84,13 +84,9 @@ export const APP_IMAGES = {
         src: `${domain}/backgrounds/team/uk1fgvh48asoyzcwirsk`
       },
       core: {
-        bolaji: {
-          alt: "Bolaji's Image",
-          src: `${domain}/backgrounds/team/core/ztbrhkngfv4l39bxrbrj`
-        },
-        yoma: {
-          alt: "Yoma's Image",
-          src: `${domain}/backgrounds/team/core/gu9ph2rjfpkar7oxk8nd`
+        samson: {
+          alt: "Samson's Image",
+          src: `${domain}/backgrounds/team/core/eeslqiebou7mgtarjmqv`
         },
         ada: {
           alt: "Ada's Image",
@@ -100,9 +96,17 @@ export const APP_IMAGES = {
           alt: "Perrie's Image",
           src: `${domain}/backgrounds/team/core/tj2h0uuzg6oxvipvh6zf`
         },
-        samson: {
-          alt: "Samson's Image",
-          src: `${domain}/backgrounds/team/core/eeslqiebou7mgtarjmqv`
+        bolaji: {
+          alt: "Bolaji's Image",
+          src: `${domain}/backgrounds/team/core/ztbrhkngfv4l39bxrbrj`
+        },
+        yoma: {
+          alt: "Yoma's Image",
+          src: `${domain}/backgrounds/team/core/gu9ph2rjfpkar7oxk8nd`
+        },
+        princess: {
+          alt: "Princess's Image",
+          src: `${domain}/backgrounds/team/core/a3yret5pdrxkycsvynxz`
         }
       }
     }
