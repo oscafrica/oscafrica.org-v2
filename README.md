@@ -70,11 +70,14 @@ We use the [commitizen command line utility](https://github.com/commitizen/cz-cl
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/alabobriggs"><img src="https://avatars.githubusercontent.com/u/38571291?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alabo David Briggs</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=alabobriggs" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Princesso"><img src="https://avatars.githubusercontent.com/u/13929923?v=4?s=100" width="100px;" alt=""/><br /><sub><b> Princess Oluebube Egbuna</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=Princesso" title="Code">💻</a></td>
-    <td align="center"><a href="https://bolajiayodeji.com"><img src="https://avatars.githubusercontent.com/u/30334776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bolaji Ayodeji</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=BolajiAyodeji" title="Code">💻</a> <a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=BolajiAyodeji" title="Documentation">📖</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/alabobriggs"><img src="https://avatars.githubusercontent.com/u/38571291?v=4?s=100" width="100px;" alt="Alabo David Briggs"/><br /><sub><b>Alabo David Briggs</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=alabobriggs" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Princesso"><img src="https://avatars.githubusercontent.com/u/13929923?v=4?s=100" width="100px;" alt=" Princess Oluebube Egbuna"/><br /><sub><b> Princess Oluebube Egbuna</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=Princesso" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://bolajiayodeji.com"><img src="https://avatars.githubusercontent.com/u/30334776?v=4?s=100" width="100px;" alt="Bolaji Ayodeji"/><br /><sub><b>Bolaji Ayodeji</b></sub></a><br /><a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=BolajiAyodeji" title="Code">💻</a> <a href="https://github.com/oscafrica/oscafrica.org-v2/commits?author=BolajiAyodeji" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ioana-chiorean"><img src="https://avatars.githubusercontent.com/u/1391451?v=4?s=100" width="100px;" alt="Ioana Chiorean"/><br /><sub><b>Ioana Chiorean</b></sub></a><br /><a href="#ideas-ioana-chiorean" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
