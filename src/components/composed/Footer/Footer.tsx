@@ -43,11 +43,11 @@ const footerLinks: IFooterLink[] = [
 
 const socialLinks: ISocialLink[] = [
   {
-    href: "https://discord.gg/pRJgjH9SwR",
+    href: "https://discord.gg/open-source-community-africa-676252299093475348",
     title: "discord"
   },
   {
-    href: "https://twitter.com/oscafrica",
+    href: "https://twitter.com/oscafest",
     title: "twitter"
   },
   {
@@ -59,15 +59,15 @@ const socialLinks: ISocialLink[] = [
     title: "linkedin"
   },
   {
-    href: "https://www.instagram.com/oscafrica/",
+    href: "https://instagram.com/oscafrica",
     title: "instagram"
   },
   {
-    href: "https://www.facebook.com/opensourcecommunityafrica/",
+    href: "https://facebook.com/opensourcecommunityafrica",
     title: "facebook"
   },
   {
-    href: "https://www.youtube.com/c/OpenSourceCommunityAfrica",
+    href: "https://youtube.com/c/OpenSourceCommunityAfrica",
     title: "youtube"
   }
 ];
