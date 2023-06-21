@@ -22,7 +22,7 @@ const CORE_MEMBERS: IMember[] = [
     image: TEAM_IMAGES.core.ada.src
   },
   {
-    twitter: "https://twitter.com/Peace_Ojemeh",
+    twitter: "https://twitter.com/youfoundperrie",
     name: "Peace Ojemeh",
     image: TEAM_IMAGES.core.perrie.src
   },
