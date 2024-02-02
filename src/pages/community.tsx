@@ -133,7 +133,7 @@ const CommunityPage = () => {
               <div className="-mt-20">
                 <iframe
                   title="Map of OSCA Community Chapters"
-                  src="https://www.google.com/maps/d/embed?mid=1tddIRnXi3KGc_YkDjPITrR2EQFKX9y2g&z=4"
+                  src="https://www.google.com/maps/d/u/2/embed?mid=1rt790BN5GfdLnmqGP0SJYmyDfdi3BFk&ehbc=2E312F"
                   width="100%"
                   height="780"
                 />
