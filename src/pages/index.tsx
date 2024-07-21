@@ -28,14 +28,23 @@ const IndexPage = () => {
                 <SectionTitle color="white" fontSize="40" className="pt-16 lg:pt-0">
                   The Next Billion Creators
                 </SectionTitle>
-                <p className="text-white font-medium lg:w-1/2 text-paragraph-2 mb-16 mt-8">
+                <p className="text-white font-medium text-paragraph-2 mb-16 mt-8">
                   A community of creative minds driving the Open Source movement in Africa.
                 </p>
-                <Link href="/about-us" passHref>
-                  <button className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
-                    Who we are
-                  </button>
-                </Link>
+                <div className="flex gap-8">
+                  <Link href="/about-us" passHref>
+                    <button className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
+                      Who We Are
+                    </button>
+                  </Link>
+                  <Link href="https://oscafrica.org/discord" passHref>
+                    <button className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
+                      <div className="inline-flex items-center">
+                        Join our Community <img className="w-8 ml-4" alt="Discord Logo" src="./images/discord.svg" />
+                      </div>
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </main>

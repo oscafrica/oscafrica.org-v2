@@ -17,7 +17,7 @@ interface ISocialLink {
 const footerLinks: IFooterLink[] = [
   {
     title: "JOIN US",
-    href: "https://discord.gg/pRJgjH9SwR"
+    href: "https://oscafrica/discord"
   },
   {
     title: "DONATE",
@@ -43,11 +43,11 @@ const footerLinks: IFooterLink[] = [
 
 const socialLinks: ISocialLink[] = [
   {
-    href: "https://discord.gg/open-source-community-africa-676252299093475348",
+    href: "https://oscafrica/discord",
     title: "discord"
   },
   {
-    href: "https://twitter.com/oscafest",
+    href: "https://twitter.com/osca_hq",
     title: "twitter"
   },
   {
@@ -76,7 +76,7 @@ const Footer = () => {
   return (
     <header className="bg-secondary px-10 lg:px-32 pt-24 pb-16">
       <div className="flex flex-col md:flex-row w-full flex-wrap justify-between items-center">
-        <Logo type="svg" tune="dark" className="mr-12"/>
+        <Logo type="svg" tune="dark" className="mr-12" />
 
         <nav className="lg:flex-grow mt-16 mb-4 md:mt-0 md:mb-0 w-full lg:w-auto order-1 lg:order-1 md:order-2">
           <ul className="flex flex-col flex-wrap md:mt-20 lg:mt-0 md:flex-row lg:flex-row lg:items-center">
@@ -113,7 +113,9 @@ const Footer = () => {
         ))}
       </ul>
 
-      <p className="w-full mt-8 md:mt-12 text-center md:text-left text-black font-bold opacity-80 text-base">Copyright &copy; Open Source Community Africa 2021</p>
+      <p className="w-full mt-8 md:mt-12 text-center md:text-left text-black font-bold opacity-80 text-base">
+        Copyright &copy; Open Source Community Africa 2021
+      </p>
     </header>
   );
 };

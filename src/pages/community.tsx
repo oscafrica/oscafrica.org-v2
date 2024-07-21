@@ -181,7 +181,7 @@ const CommunityPage = () => {
           <a
             target="_blank"
             rel="noreferrer noopener"
-            href="https://discord.gg/pRJgjH9SwR"
+            href="https://oscafrica/discord"
             className=" text-primary duration-200 text-body py-4 px-7 rounded-lg hover:text-black hover:bg-primary leading-10"
           >
             Join our community
