@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/open-source-community-africa-676252299093475348"
+  status = 301
+  force = true
