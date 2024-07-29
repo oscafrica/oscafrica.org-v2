@@ -14,37 +14,37 @@ const COMMUNITY_PARTNERS = [
     name: "Sustain OSS",
     image: COMMUNITY_IMAGES.partners.sustain.src,
     alt: COMMUNITY_IMAGES.partners.sustain.alt,
-    link: "https://sustainoss.org?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+    link: "https://sustainoss.org?ref=oscafrica"
   },
   {
     name: "Open Source Collective",
     image: COMMUNITY_IMAGES.partners.osc.src,
     alt: COMMUNITY_IMAGES.partners.osc.alt,
-    link: "https://oscollective.org?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+    link: "https://oscollective.org?ref=oscafrica"
   },
   {
     name: "She Code Africa",
     image: COMMUNITY_IMAGES.partners.sca.src,
     alt: COMMUNITY_IMAGES.partners.sca.alt,
-    link: "https://shecodeafrica.org?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+    link: "https://shecodeafrica.org?ref=oscafrica"
   },
   {
     name: "TalentQL",
     image: COMMUNITY_IMAGES.partners.talentql.src,
     alt: COMMUNITY_IMAGES.partners.talentql.alt,
-    link: "https://talentql.com?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+    link: "https://talentql.com?ref=oscafrica"
   },
   {
     name: "GitHub Africa",
     image: COMMUNITY_IMAGES.partners.github.src,
     alt: COMMUNITY_IMAGES.partners.github.alt,
-    link: "https://meetup.com/github-africa?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+    link: "https://meetup.com/github-africa?ref=oscafrica"
   },
   {
     name: "Propel",
     image: COMMUNITY_IMAGES.partners.propel.src,
     alt: COMMUNITY_IMAGES.partners.propel.alt,
-    link: "https://withpropel.com?utm_source=oscafrica&utm_medium=referral&utm_campaign=partnership"
+    link: "https://withpropel.com?ref=oscafrica"
   }
 ];
 
