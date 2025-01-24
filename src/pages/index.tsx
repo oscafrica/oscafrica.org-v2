@@ -19,7 +19,7 @@ const IndexPage = () => {
           <main className="w-full  h-full lg:h-auto lg:w-2/3">
             <div className="min-h-full bg-secondary relative duration-20 pt-96 lg:pt-0 w-full px-10 lg:pl-32 flex flex-col justify-end items-start pb-48 lg:pb-72">
               <img
-                className="z-10 object-cover absolute top-0 left-0 hover:opacity-20 duration-200 w-full"
+                className="z-10 object-cover absolute h-full top-0 left-0 hover:opacity-20 duration-200 w-full"
                 alt={HOME_IMAGES.bg1.alt}
                 src={HOME_IMAGES.bg1.src}
               />
@@ -31,7 +31,7 @@ const IndexPage = () => {
                 <p className="text-white font-medium text-paragraph-2 mb-16 mt-8">
                   A community of creative minds driving the Open Source movement in Africa.
                 </p>
-                <div className="flex gap-8">
+                <div className="flex flex-wrap gap-8">
                   <Link href="/about-us" passHref>
                     <button className="bg-primary lg:bg-white text-base lg:inline-block font-medium focus:bg-white lg:hover:bg-primary rounded-primary duration-200 transition-all py-6 px-10">
                       Who We Are
