@@ -99,7 +99,7 @@ const Footer = () => {
           href="https://blog.oscafrica.org/newsletter"
           target="_blank"
           rel="noreferrer noopenner"
-          className="bg-primary order-2 lg:order-2 md:order-1"
+          className="bg-primary hover:bg-black hover:text-white order-2 lg:order-2 md:order-1"
         >
           Subscribe to Newsletter
         </StyledNewsLetterLink>
@@ -114,7 +114,7 @@ const Footer = () => {
       </ul>
 
       <p className="w-full mt-8 md:mt-12 text-center md:text-left text-black font-bold opacity-80 text-base">
-        Copyright &copy; Open Source Community Africa 2021
+        Copyright &copy; Open Source Community Africa 2025
       </p>
     </header>
   );
