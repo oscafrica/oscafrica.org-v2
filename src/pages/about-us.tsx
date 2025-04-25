@@ -50,7 +50,6 @@ const AboutUsPage = () => {
         </StyledMainSection>
 
         <section className="w-full">
-      
         <div className="bg-white py-20 px-6 lg:px-20 w-full">
           <div className="max-w-5xl mx-auto text-center">
             <SectionTitle fontSize="32">Who we are</SectionTitle>
