@@ -72,7 +72,6 @@ const AboutUsPage = () => {
           </article>
           <article className="lg:flex lg:items-end lg:mt-16">
             <ImageBackground src={ABOUT_IMAGES.bg2.src} alt={ABOUT_IMAGES.bg2.alt} className="lg:w-3/5" />
-            {/* <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 lg:-mb-40 z-30"> */}
             <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 z-30">
 
               <SectionTitle fontSize="32">Mission</SectionTitle>
