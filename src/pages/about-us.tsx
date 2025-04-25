@@ -49,10 +49,39 @@ const AboutUsPage = () => {
           </div>
         </StyledMainSection>
 
-        <section className="w-full max-w-1440 ">
+        {/* <section className="w-full max-w-1440 "> */}
+        <section className="w-full">
+        {/* <div className="bg-white relative py-36 px-6 md:px-10 lg:px-16 xl:px-20 w-full max-w-5xl mx-auto lg:-mt-40 z-30">
+          <SectionTitle fontSize="32">Who we are</SectionTitle>
+          <p className="pt-12">
+            Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts within
+            and across Africa with the sole aim of increasing the rate of credible contributions by African software
+            developers, designers, writers and everyone involved in the sphere of technology to open source projects
+            both locally and globally, changing the perception of Africans from just the billion users to the
+            <br />
+            <br />
+            <b>NEXT BILLION CREATORS.</b>
+          </p>
+        </div> */}
+        <div className="bg-white py-20 px-6 lg:px-20 w-full">
+          <div className="max-w-5xl mx-auto text-center">
+            <SectionTitle fontSize="32">Who we are</SectionTitle>
+            <p className="pt-8 text-sm md:text-base leading-relaxed">
+              Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts within
+              and across Africa with the sole aim of increasing the rate of credible contributions by African software
+              developers, designers, writers and everyone involved in the sphere of technology to open source projects
+              both locally and globally, changing the perception of Africans from just the billion users to the
+              <br />
+              <br />
+              <b>NEXT BILLION CREATORS.</b>
+            </p>
+          </div>
+        </div>
+
+
           <article className="w-full">
             <ImageBackground src={ABOUT_IMAGES.bg1.src} alt={ABOUT_IMAGES.bg1.alt} className="lg:w-full" />
-            <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
+            {/* <div className="bg-white relative py-36 px-10 lg:px-20 w-screen lg:w-3/5 lg:-mt-40 z-30">
               <SectionTitle fontSize="32">Who we are</SectionTitle>
               <p className="pt-12">
                 Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts within
@@ -63,11 +92,13 @@ const AboutUsPage = () => {
                 <br />
                 <b>NEXT BILLION CREATORS.</b>
               </p>
-            </div>
+            </div> */}
           </article>
           <article className="lg:flex lg:items-end lg:mt-16">
             <ImageBackground src={ABOUT_IMAGES.bg2.src} alt={ABOUT_IMAGES.bg2.alt} className="lg:w-3/5" />
-            <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 lg:-mb-40 z-30">
+            {/* <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 lg:-mb-40 z-30"> */}
+            <div className="bg-white relative py-20 w-screen lg:w-1/2 px-10 lg:px-20 lg:-ml-40 z-30">
+
               <SectionTitle fontSize="32">Mission</SectionTitle>
               <p className="pt-12">
                 We are a diverse community of open source lovers, collaborating on different projects to make a
@@ -85,14 +116,18 @@ const AboutUsPage = () => {
               </p>
             </div>
           </article>
-          <article className="lg:flex lg:items-end lg:mt-64">
+          {/* <article className="lg:flex lg:items-end lg:mt-64"> */}
+          <article className="lg:flex lg:items-end lg:mt-56">
+
             <ImageBackground
               src={ABOUT_IMAGES.bg3.src}
               alt={ABOUT_IMAGES.bg3.alt}
-              className="lg:w-3/5 lg:hidden block"
+              className="lg:w-3/5 lg:hidden block "
             />
 
-            <div className="bg-white relative py-20 lg:w-1/2 px-10 lg:px-20 lg:-mr-40 lg:-mb-40 z-30">
+            {/* <div className="bg-white relative py-20 lg:w-1/2 px-10 lg:px-20 lg:-mr-40 lg:-mb-40 z-30"> */}
+            <div className="bg-white relative py-20 lg:w-1/2 px-10 lg:px-20 lg:-mr-40 z-30">
+
               <SectionTitle fontSize="32">Our Vision</SectionTitle>
               <p className="pt-12">
                 In due time, we hope technological skills would be at the grassroots of Africa.
@@ -115,7 +150,9 @@ const AboutUsPage = () => {
             />
           </article>
         </section>
-        <article className="lg:flex w-screen lg:mt-64 lg:-mx-32">
+        {/* <article className="lg:flex w-screen lg:mt-64 lg:-mx-32"> */}
+        <article className="lg:flex w-screen lg:mt-60 lg:-mx-32">
+
           <img src={ABOUT_IMAGES.bg1.src} alt={ABOUT_IMAGES.bg1.alt} className="lg:w-1/2 h-auto lg:h-full" />
 
           <div className="min-h-full flex flex-col items-start justify-center px-10 lg:px-24 py-20 w-full lg:w-1/2 bg-blue-theme">
