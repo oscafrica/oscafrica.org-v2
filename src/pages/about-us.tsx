@@ -49,11 +49,12 @@ const AboutUsPage = () => {
           </div>
         </StyledMainSection>
 
-        <section className="w-full">
+        <section className="w-full max-w-1440">
         <div className="bg-white py-20 px-6 lg:px-20 w-full">
           <div className="max-w-5xl mx-auto text-center">
             <SectionTitle fontSize="32">Who we are</SectionTitle>
-            <p className="pt-8 text-sm md:text-base leading-relaxed">
+            {/* Changed text-sm to text-base here for mobile */}
+            <p className="pt-8 text-base leading-relaxed">
               Open Source Community Africa (OSCA) is for open source lovers, enthusiasts, advocates and experts within
               and across Africa with the sole aim of increasing the rate of credible contributions by African software
               developers, designers, writers and everyone involved in the sphere of technology to open source projects
@@ -90,7 +91,7 @@ const AboutUsPage = () => {
               </p>
             </div>
           </article>
-          <article className="lg:flex lg:items-end lg:mt-56">
+          <article className="lg:flex lg:items-end lg:mt-40">
 
             <ImageBackground
               src={ABOUT_IMAGES.bg3.src}
