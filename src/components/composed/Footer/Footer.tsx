@@ -114,7 +114,11 @@ const Footer = () => {
       </ul>
 
       <p className="w-full mt-8 md:mt-12 text-center md:text-left text-black font-bold opacity-80 text-base">
-        Copyright &copy; Open Source Community Africa 2025
+        This site is powered by{" "}
+        <a href="https://netlify.com?ref=oscafrica" target="_blank" rel="noopener noreferrer">
+          Netlify
+        </a>
+        &nbsp;| Copyright &copy; Open Source Community Africa 2025.
       </p>
     </header>
   );
