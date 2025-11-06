@@ -24,7 +24,8 @@
     "start": "next start",
     "type-check": "tsc",
     "storybook": "npm run build:tailwind && start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "cypress run"
   },
   "dependencies": {
     "@babel/core": "^7.14.3",
