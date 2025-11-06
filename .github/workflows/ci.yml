@@ -10,110 +10,45 @@ env:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2-beta
-
-      - name: Setup node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "18"
-
-      - name: Restore node_modules
-        uses: actions/cache@v4.2.0
-        id: api-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-api-node-modules-${{ hashFiles('package-lock.json') }}
-
-      - name: Restore .npm cache
-        if: steps.api-node-modules.outputs.cache-hit != 'true'
-        uses: actions/cache@v4.2.0
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-api-npm-cache-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            - ${{ runner.os }}-api-npm-cache-${{ hashFiles('package-lock.json') }}
-            - ${{ runner.os }}-api-npm-cache-
-      - name: Install dependencies
-        if: steps.api-node-modules.outputs.cache-hit != 'true'
-        run: npm install
-
-      # - run: npm run analyze:lint
+          node-version: 18
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      # - run: yarn analyze:lint
 
   prettier:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2-beta
-
-      - name: Setup node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "18"
-
-      - name: Restore node_modules
-        uses: actions/cache@v4.2.0
-        id: api-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-api-node-modules-${{ hashFiles('package-lock.json') }}
-
-      - name: Restore .npm cache
-        if: steps.api-node-modules.outputs.cache-hit != 'true'
-        uses: actions/cache@v4.2.0
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-api-npm-cache-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            - ${{ runner.os }}-api-npm-cache-${{ hashFiles('package-lock.json') }}
-            - ${{ runner.os }}-api-npm-cache-
-      - name: Install dependencies
-        if: steps.api-node-modules.outputs.cache-hit != 'true'
-        run: npm install
-
-      # - run: npm run analyze:prettier
+          node-version: 18
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      # - run: yarn analyze:prettier
 
   test-and-coverage:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2-beta
-
-      - name: Setup node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: 18
+          cache: 'yarn'
 
-      - name: Restore node_modules
-        uses: actions/cache@v4.2.0
-        id: api-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-api-node-modules-${{ hashFiles('package-lock.json') }}
-
-      - name: Restore .npm cache
-        if: steps.api-node-modules.outputs.cache-hit != 'true'
-        uses: actions/cache@v4.2.0
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-api-npm-cache-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            - ${{ runner.os }}-api-npm-cache-${{ hashFiles('package-lock.json') }}
-            - ${{ runner.os }}-api-npm-cache-
       - name: Install dependencies
-        if: steps.api-node-modules.outputs.cache-hit != 'true'
-        run: npm install
+        run: yarn install --frozen-lockfile
 
-      - name: Generate Coverage
+      - name: Run Cypress tests and collect coverage
         run: |
-          yarn cypress install
-          yarn run test
-      # - name: Coveralls
+          npx cypress install
+          yarn test
+
+      # - name: Upload coverage to Coveralls
       #   uses: coverallsapp/github-action@master
       #   with:
       #     github-token: ${{ secrets.GITHUB_TOKEN }}
-          # path-to-lcov: ./coverage/lcov.info
+      #     path-to-lcov: ./coverage/lcov.info
