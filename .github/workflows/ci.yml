@@ -110,8 +110,8 @@ jobs:
 
       - name: Generate Coverage
         run: |
-          npx cypress install
-          npm run test
+          yarn cypress install
+          yarn run test
       # - name: Coveralls
       #   uses: coverallsapp/github-action@master
       #   with:
