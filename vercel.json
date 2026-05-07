@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/open-source-community-africa-676252299093475348",
+      "permanent": true
+    }
+  ]
+}
