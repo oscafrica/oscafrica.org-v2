@@ -28,7 +28,7 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.29.6",
     "@types/styled-components": "^5.1.9",
     "autoprefixer": "^10",
     "classnames": "^2.3.1",
